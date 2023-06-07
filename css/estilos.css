@@ -9,7 +9,7 @@ p {font-size: 20px;}
   text-align: center;
   background-color: rgb(100, 37, 0);
   padding: 2%;}
-
+  h1, h2, h3, h4, h5, h6 {font-size: 95%;}
 .galeria {
   display: flex;
   justify-content: space-between;
@@ -41,12 +41,13 @@ p {font-size: 20px;}
   opacity: 1;}
 
 
-nav { display: grid;
+nav, .navbar navbar-expand-lg bg-body-tertiary  
+{ display: grid;
   justify-content: center;
   text-align: start;
   align-items: stretch;
   background-color: #c1aa89}
-nav ul, na li { display: flex;
+nav ul, nav li { display: flex;
   justify-content: center;
   list-style: none;
   padding: 0;
@@ -61,8 +62,7 @@ nav ul, na li { display: flex;
   width: 50%;
   height: auto;}
 body {
-  background-image: url('../assets/fondo3.jpg');background-size: cover;
-}
+  background-image: url('../assets/fondo3.jpg');background-size: cover;}
 .texto {
   display: grid;
   width: 70%;
@@ -99,7 +99,7 @@ footer {
     flex-direction:column;
     width:22px;
     padding-left:19px;}
-  
+  /*botonbuscarsinfuncion*/
   .d-flex 
   { display: flex; justify-content: end; width: fit-content; color:#c1aa89;flex-direction: row;}
     
@@ -107,7 +107,7 @@ footer {
 .containertotal {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: 1fr 2fr 2fr 0.1fr;
+  grid-template-rows: 1fr 1fr 0.1fr;
   gap: 10px 0px;
   justify-content: space-between;
   text-align:center;
@@ -115,15 +115,9 @@ footer {
   font-size:20px;
   overflow-x: hidden;
   grid-template-areas:
-    "navegador-destacado navegador-destacado"
     "conteiner-img  contenidod"
     "conteiner-img1 contenidod2"
     "piedepagina piedepagina";}
-.navegador-destacado, header  {
-grid-area: navegador-destacado;
-grid-column: 1 / -1; 
-background-color: rgb(19, 19, 19);
-color: #f2f2f2;}
 a {color: white;
   text-decoration: none;
   font-size: 18px;}
@@ -144,8 +138,6 @@ a:hover {
 .piedepagina {
   grid-area: piedepagina;
   grid-column: 1 / -1;}
-
-
 .social-icons {
   color: #a05e5e; 
   text-decoration: none;
@@ -155,7 +147,6 @@ a:hover {
 .reds:hover {color: #653a08;}
 .reds { color:rgb(177, 106, 83);}
 .mapa { display: flex; justify-content:start;}
-
 
 @media (max-width: 500px) {
   .containertotal {
@@ -171,31 +162,20 @@ img { justify-content:center;
     flex-direction: column;
   }  nav ul li {margin: 4px;}
 a {text-decoration: none;
-  rgb(177, 106, 83);
   font-size:small;}
 .h1unico, .header, .body { color:black; background-color: rgb(255, 255, 255);} 
-.galeria-item, .conteiner-img, .galeria-informacion, body, main, main.contacto
-{ display: flex; 
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
-  font-size: 12px; }
-.form, main, .contacto, body { 
-  display: flex;
-  flex-direction: column; 
-  justify-content: center;
-  text-align: center;
-  align-items:center;}
 .button {width:100%;min-height: auto;}
 .galeria-item {
   position: relative;
   width: calc(50% - 1rem);
   margin-bottom: 1rem;}
-.form, main { display: flex;
+.form, main, .texto ,.social-icons, .contacto, body ,.galeria-item, .conteiner-img, .galeria-informacion, body, main, main.contacto
+{ display: flex;
   flex-direction: column; 
-  justify-content: center;
-  width:50%;}}
-
+  text-align: center;
+  justify-content: center;}
+.texto{ align-items:center; width:100%; font-size: medium;}h1, h2, h3, h4, h5, h6 {font-size: 90%;}}
+.social-icons: {width: 10%;}}
 @media (min-width: 768px) and (max-width: 1023px) { 
   .containertotal {
     display: flex; 
@@ -214,16 +194,11 @@ a {text-decoration: none;
   .piedepagina {
   background-color: #060606;}}
 
-
 @media (min-width: 1024px) {
-  a {
-    text-decoration: none;
-    color: #333;
-  }
-  .h1unico, .header, .body {
+  a {text-decoration: none;
+    color: #333;}
+.h1unico, .header, .body {
     color: white;
     background-color: #333;
   }
-  .piedepagina {
-    color: white;
-    }}
+.piedepagina {color: white;}}
