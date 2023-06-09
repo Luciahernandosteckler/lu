@@ -8,6 +8,11 @@ html {font-size: 62, 5%;}
   background-color: rgb(2, 2, 2);
   padding: 2%;}
   h1, h2, h3, h4, h5, h6 {font-size: 95%;}
+  .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;}
 .galeria {
   display: flex;
   justify-content: space-between;
@@ -136,7 +141,9 @@ img { justify-content:center;
     flex-direction: column;
   }  nav ul li {margin: 4px;}
 a {text-decoration: none;font-size:small;}
-.h1unico, .header, .body { color:black; background-color: rgb(255, 255, 255);} 
+.h1unico, .header, .body 
+{ color:rgb(236, 226, 226); 
+background-color: rgb(11, 9, 9);} 
 .button {width:100%;min-height: auto;}
 .carousel-item img {
   width: 100%;
@@ -144,41 +151,39 @@ a {text-decoration: none;font-size:small;}
 .galeria-informacion {
   padding: 0.1em;}
 .galeria-item {
-  position: relative;
   width: calc(50% - 1rem);
-  margin-bottom: 1rem;}
+  margin-bottom: 1rem;
+  margin-left:1rem;}
 .form, main, .texto ,.social-icons, .contacto, body ,.galeria-item, .conteiner-img, .galeria-informacion, body, main, main.contacto
 { display: flex;
-  flex-direction: column; 
-  text-align: center;
-  justify-content: center;}
+flex-direction: column; 
+text-align: center;
+justify-content: center;}
 .texto{ align-items:center; width:100%; font-size: medium;} p, h1, h2, h3, h4, h5, h6 {font-size: 90%;}}
-@media (min-width: 768px) and (max-width: 1023px) { 
-  .containertotal {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items:center;
-    background-color: white;
-    color: #f2f2f2;
-    font-size: large;}
+@media (min-width: 768px) and (max-width: 1023px) {
+.containertotal {
+display: flex; 
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items:center;
+font-size: large;}
+.galeria-item {
+  width: 45%;
+  margin-bottom: 1rem;
+  margin-left: 2.5rem;
+}
 .carousel-item img {
 width: 100%; 
-height: auto;
+height: auto;}
 a {text-decoration: none;
 color: #f9f4f4d6;}.texto{ align-items:center; width:100%; font-size: medium;} p, h1, h2, h3, h4, h5, h6 {font-size: 90%;}
 .galeria-informacion {
 padding: 0.1em;}
 .h1unico, .header, .body {
-  color: rgb(245, 233, 233);
-  background-color: rgb(15, 14, 14);}
-  .piedepagina {
-  background-color: #cfc2c2;}}
-@media (min-width: 1024px) {
-  a {text-decoration: none;
-    color: #333;}
-.h1unico, .header, .body {
-    color: white;
-    background-color: #333;}
-.piedepagina {color: white;}}
+color: rgb(245, 233, 233);
+background-color: rgb(15, 14, 14);}}
+
+@media screen and (min-width: 1024px) {
+.galeria {
+margin-left:2.9rem;}}
