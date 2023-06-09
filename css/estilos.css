@@ -37,7 +37,6 @@ html {font-size: 62, 5%;}
   transition: opacity 0.3s ease;}
 .galeria-item:hover .galeria-informacion {
   opacity: 1;}
-
 nav, .navbar navbar-expand-lg bg-body-tertiary  
 { display: grid;
   justify-content: center;
@@ -49,8 +48,6 @@ nav ul, nav li { display: flex;
   list-style: none;
   padding: 0;
   margin: 0;}
-
-
 .logo-container {
   display: inline-block;
   width: 100px;
@@ -65,12 +62,10 @@ body {
   width: 70%;
   text-align: start;
   font-size: 18px;}
-
 footer {
   position: grid;
   bottom: 0;
   right: 0;}
-
   form {
     display: flex;
     flex-direction:column;
@@ -79,7 +74,6 @@ footer {
   /*botonbuscarsinfuncion*/
   .d-flex 
   { display: flex; justify-content: end; width: fit-content; color:#c1aa89;flex-direction: row;}
-    
 /* pagina destacado*/
 .containertotal {
   display: grid;
@@ -116,7 +110,6 @@ a:hover {
   .conteiner-img1,
   img { justify-content:center;
       width: 100%; height:auto;}
-
 .piedepagina {
   grid-area: piedepagina;
   grid-column: 1 / -1;}
@@ -145,13 +138,11 @@ img { justify-content:center;
 a {text-decoration: none;font-size:small;}
 .h1unico, .header, .body { color:black; background-color: rgb(255, 255, 255);} 
 .button {width:100%;min-height: auto;}
-
-
+.carousel-item img {
+  width: 100%;
+  height: auto;   }
 .galeria-informacion {
   padding: 0.1em;}
-
-
-
 .galeria-item {
   position: relative;
   width: calc(50% - 1rem);
@@ -172,12 +163,14 @@ a {text-decoration: none;font-size:small;}
     background-color: white;
     color: #f2f2f2;
     font-size: large;}
-  a {text-decoration: none;
-    color: #f9f4f4d6;}.texto{ align-items:center; width:100%; font-size: medium;} p, h1, h2, h3, h4, h5, h6 {font-size: 90%;}
-    .galeria-informacion {
-      padding: 0.1em;}
-
-  .h1unico, .header, .body {
+.carousel-item img {
+width: 100%; 
+height: auto;
+a {text-decoration: none;
+color: #f9f4f4d6;}.texto{ align-items:center; width:100%; font-size: medium;} p, h1, h2, h3, h4, h5, h6 {font-size: 90%;}
+.galeria-informacion {
+padding: 0.1em;}
+.h1unico, .header, .body {
   color: rgb(245, 233, 233);
   background-color: rgb(15, 14, 14);}
   .piedepagina {
@@ -187,6 +180,5 @@ a {text-decoration: none;font-size:small;}
     color: #333;}
 .h1unico, .header, .body {
     color: white;
-    background-color: #333;
-  }
+    background-color: #333;}
 .piedepagina {color: white;}}
