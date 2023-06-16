@@ -1,72 +1,35 @@
-* {
+html {
+  font-size: 62.5%; /* 62.5% representa un 10px, 1em = 10px */
   font-family: "Domine", serif;
 }
-html {
-  font-size: 62, 5%;
+p {
+  font-size: 2.5rem;
 }
-.h1unico {
-  font-size: 1rem;
-  color: white;
-  text-align: center;
-  background-color: rgb(2, 2, 2);
-  padding: 2%;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 95%;
-}
-.carousel-item img {
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-  height: 100%;
-}
-.galeria {
+.texto {
   display: flex;
-  justify-content: space-between;
+  text-align: center;
+  font-size: 2rem;
   align-items: center;
-  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center; 
 }
-.galeria-item {
-  position: relative;
-  width: calc(28% - 1rem);
-  margin-bottom: 1rem;
-}
-.galeria-item img {
-  width: 90%;
-  height: auto;
-  display: block;
-  flex-wrap: wrap;
-  transition: transform 0.3s ease;
-}
-.galeria-item:hover img {
-  transform: scale(1.2);
-}
-.galeria-informacion {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.galeria-item:hover .galeria-informacion {
-  opacity: 1;
-}
+/*navegador general*/
 nav ul,
-nav li {
+nav li,
+.nav-item .navbar-brand {
   display: flex;
   justify-content: center;
   list-style: none;
   padding: 0;
   margin: 0;
+  font-size: 2rem;
+  justify-content: space-around;
+}
+.a {
+  font-size: 2rem;
+}
+a:hover {
+  color: #653a08;
 }
 .logo-container {
   display: inline-block;
@@ -77,26 +40,11 @@ nav li {
   width: 50%;
   height: auto;
 }
-body {
-  background-image: url("../assets/fondo3.jpg");
-  background-size: cover;
-}
-.texto {
-  display: grid;
-  width: 70%;
-  text-align: start;
-  font-size: 18px;
-}
 footer {
-  position: grid;
-  bottom: 0;
-  right: 0;
-}
-form {
   display: flex;
-  flex-direction: column;
-  width: 22px;
-  padding-left: 19px;
+  justify-content: center;
+  align-content: center;
+  font-size: 4rem;
 }
 /*botonbuscarsinfuncion*/
 .d-flex {
@@ -106,29 +54,98 @@ form {
   color: #c1aa89;
   flex-direction: row;
 }
+.encabezado {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  padding: 2%;
+  background: rgb(237, 225, 200);
+  background: radial-gradient(
+    circle,
+    rgba(237, 225, 200, 1) 0%,
+    rgba(235, 220, 193, 1) 0%,
+    rgba(255, 210, 158, 0.5606617647058824) 19%,
+    rgba(255, 212, 130, 0.5046393557422969) 48%,
+    rgba(224, 198, 142, 0.46262254901960786) 70%,
+    rgba(212, 182, 137, 0.5550595238095238) 83%,
+    rgba(201, 167, 98, 0.29175420168067223) 96%,
+    rgba(245, 219, 141, 0.6587009803921569) 100%,
+    rgba(255, 255, 255, 0.11808473389355745) 100%
+  );
+}
+/*inicio-home*/
+.carousel-item img {
+  height: 200rem;
+  object-fit: cover;
+}
+/*galeria de productos*/
+.galeria {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.galeria-item {
+  position: relative;
+  width: calc(27% - 1rem);
+  margin-bottom: 5rem;
+}
+.galeria-item img {
+  width: 99%;
+  height: auto;
+  display: block;
+  flex-wrap: wrap;
+  transition: transform 0.2s ease;
+}
+.galeria-item:hover img {
+  transform: scale(1.1);
+}
+.galeria-informacion {
+  position: absolute;
+  width: 95%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.galeria-item:hover .galeria-informacion {
+  opacity: 1;
+}
+/*contacto formulario y lista*/
+.cont {
+  display: flex;
+  flex-direction: column;
+  width: 2rem;
+  height: auto;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+.list-group-item {
+  display: flex;
+  width: 100%;
+}
 /* pagina destacado*/
 .containertotal {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: 1fr 1fr 0.1fr;
+  grid-template-rows: 0.4fr 0.4fr 0.1fr;
   gap: 10px 0px;
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  font-size: 20px;
   overflow-x: hidden;
   grid-template-areas:
     "conteiner-img  contenidod"
     "conteiner-img1 contenidod2"
     "piedepagina piedepagina";
-}
-a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-a:hover {
-  color: #653a08;
 }
 .contenidod {
   grid-area: contenidod;
@@ -150,14 +167,13 @@ a:hover {
 .conteiner-img1,
 img {
   justify-content: center;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
-.piedepagina {
-  grid-area: piedepagina;
-  grid-column: 1 / -1;
-}
-.social-icons {
+
+
+/*redes sociales estilo para todas las paginas*/
+.piedepagina, .social-icons {
   color: #a05e5e;
   text-decoration: none;
   margin-top: 59px;
@@ -170,36 +186,50 @@ img {
 .reds {
   color: rgb(177, 106, 83);
 }
+/*ubicacion en envios*/
 .mapa {
   display: flex;
   justify-content: start;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px)  {
+  .galeria {/*galeria productos*/
+    margin-right: 1rem;
+  }
+  .galeria-informacion {
+    padding: 0.1em;
+  }
+  .galeria-item {
+    width: calc(50% - 1rem);
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .carousel-item img {
+    height: 100rem;
+    object-fit: cover;
+  }
+  /*destacado*/
   .containertotal {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
   }
   .conteiner-img,
-  .conteiner-img1,
+  .conteiner-img1
   img {
     justify-content: center;
     width: 100%;
     height: auto;
     flex-direction: column;
   }
-  nav ul li {
-    margin: 4px;
+  /*navegador general*/
+  nav ul,
+  nav li,
+  .nav-item .navbar-brand {
+  font-size: 1rem;
   }
-  a {
-    text-decoration: none;
-    font-size: small;
-  }
-  .h1unico,
-  .header,
-  .body {
+body {
     color: rgb(236, 226, 226);
     background-color: rgb(11, 9, 9);
   }
@@ -207,51 +237,14 @@ img {
     width: 100%;
     min-height: auto;
   }
-  .carousel-item img {
-    width: 100%;
-    height: auto;
-  }
-  .galeria-informacion {
-    padding: 0.1em;
-  }
-  .galeria-item {
-    width: calc(50% - 1rem);
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-  }
-  .form,
-  main,
-  .texto,
-  .social-icons,
-  .contacto,
-  body,
-  .galeria-item,
-  .conteiner-img,
-  .galeria-informacion,
-  body,
-  main,
-  main.contacto {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-  }
+  .encabezado,
+  footer,
   .texto {
-    align-items: center;
-    width: 100%;
-    font-size: medium;
-  }
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 90%;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
+  /*pagina destacado*/
   .containertotal {
     display: flex;
     flex-direction: column;
@@ -260,14 +253,19 @@ img {
     align-items: center;
     font-size: large;
   }
+  /*galeria productos*/
+  .galeria {
+    padding: 3rem;
+  }
   .galeria-item {
     width: 45%;
-    margin-bottom: 1rem;
-    margin-left: 2.5rem;
   }
-  .carousel-item img {
-    width: 100%;
-    height: auto;
+  .galeria-informacion {
+    padding: 0.1em;
+  }
+  body{
+    color: rgb(245, 233, 233);
+    background-color: rgb(15, 14, 14);
   }
   a {
     text-decoration: none;
@@ -276,29 +274,27 @@ img {
   .texto {
     align-items: center;
     width: 100%;
-    font-size: medium;
-  }
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 90%;
-  }
-  .galeria-informacion {
-    padding: 0.1em;
-  }
-  .h1unico,
-  .header,
-  .body {
-    color: rgb(245, 233, 233);
-    background-color: rgb(15, 14, 14);
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .galeria {
-    margin-left: 2.9rem;
+/*galeria productos*/
+.galeria {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 3rem;
+    padding: 2rem;
   }
+body {
+    background-image: url("../assets/fondo3.jpg");
+    background-size: cover;
+  }
+.texto { display: flex;
+  justify-content: start;
+  text-align: start;
+  align-items: start; }
+  .espacio {
+    letter-spacing: 0.4rem;
+  }  
 }
+
