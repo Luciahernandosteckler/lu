@@ -1,6 +1,7 @@
 @charset "UTF-8";
 html {
-  font-size: 62.5%; /* 62.5% representa un 10px, 1em = 10px */
+  font-size: 62.5%;
+  /* 62.5% representa un 10px, 1em = 10px */
   font-family: "Domine", serif;
 }
 html p {
@@ -48,7 +49,7 @@ html .texto {
 }
 
 .a {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .a:hover {
   color: #653a08;
@@ -57,14 +58,27 @@ html .texto {
 footer {
   display: flex;
   justify-content: center;
-  align-content: center;
-  font-size: 2rem;
+  align-items: center;
+  font-size: 0.5rem;
+  max-width: 100%;
 }
-footer .piedepagina {
+
+.piedepagina {
   padding: 1rem;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  max-width: 100%;
 }
-footer .social-icons a {
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.social-icons a {
   display: inline-block;
   text-align: center;
   margin: 1rem;
@@ -72,16 +86,14 @@ footer .social-icons a {
   text-decoration: none;
   justify-content: center;
 }
-footer .social-icons a:hover {
+.social-icons a:hover {
   color: #653a08;
 }
-footer .social-icons .reds {
+.social-icons .reds {
   color: rgb(177, 106, 83);
-  justify-content: center;
 }
-footer .social-icons h3 {
+.social-icons h3 {
   margin-top: 1rem;
-  justify-content: center;
 }
 
 .encabezado {
@@ -152,7 +164,7 @@ footer .social-icons h3 {
   width: 2rem;
   height: auto;
   font-size: 2rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
   color: #653a08;
 }
 
@@ -164,6 +176,11 @@ footer .social-icons h3 {
 /* pagina destacado*/
 .containertotal {
   overflow-x: hidden;
+  font-size: 1 rem;
+}
+
+.col-12.col-md-6 h2.espacio {
+  font-size: 2rem;
 }
 
 .col-12 {
@@ -182,20 +199,30 @@ footer .social-icons h3 {
   max-height: 200rem;
 }
 
-.mapa {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 30rem;
-  position: relative;
-  z-index: 1;
+.grid-text {
+  font-size: 1rem;
 }
 
-/*celular*/ /* galeria productos */
+.mapaconteiner {
+  position: relative;
+  max-width: 10rem;
+  max-height: 20rem;
+}
+.mapaconteiner .mapa {
+  position: absolute;
+  max-width: 10rem;
+  max-height: 20rem;
+  top: 0;
+  left: 0;
+}
+
+/*celular*/
 @media (max-width: 500px) {
   .col-12.col-md-6.order-md-2 {
     width: 100%;
+  }
+  .col-12.col-md-6 h2.espacio {
+    font-size: 1rem;
   }
   .row {
     flex-wrap: wrap;
@@ -222,6 +249,9 @@ footer .social-icons h3 {
   .carousel-item img {
     height: 100rem;
     object-fit: cover;
+  }
+  .piedepagina {
+    width: max-content;
   }
 }
 .containertotal {
@@ -252,6 +282,16 @@ body .texto {
   font-size: 1rem;
   color: rgb(65, 38, 2);
   background-color: aliceblue;
+}
+
+/*contacto formulario y lista*/
+.cont {
+  font-size: 1rem;
+}
+
+.list-group-item {
+  display: flex;
+  width: 100%;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {

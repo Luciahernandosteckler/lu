@@ -1,10 +1,12 @@
-
 html {
-  font-size: 62.5%; /* 62.5% representa un 10px, 1em = 10px */
+  font-size: 62.5%;
+  /* 62.5% representa un 10px, 1em = 10px */
   font-family: "Domine", serif;
+
   p {
     font-size: 2rem;
   }
+
   .texto {
     display: flex;
     text-align: center;
@@ -15,7 +17,9 @@ html {
     color: #2d1801;
   }
 }
+
 .nav {
+
   ul,
   li,
   .nav-item,
@@ -29,6 +33,7 @@ html {
     font-size: 4rem;
     justify-content: space-around;
   }
+
   .d-flex {
     display: flex;
     justify-content: end;
@@ -37,79 +42,98 @@ html {
     flex-direction: row;
   }
 }
+
 .logo-container {
   display: inline-block;
   width: 100px;
   margin-top: 10px;
+
   img {
     width: 50%;
     height: auto;
   }
 }
+
 .a {
-  font-size: 3rem;
+  font-size: 2rem;
+
   &:hover {
     color: #653a08;
   }
 }
+
 footer {
   display: flex;
   justify-content: center;
-  align-content: center;
-  font-size: 2rem;
-  .piedepagina {
-    padding: 1rem;
+  align-items: center;
+  font-size: 0.5rem;
+  max-width: 100%;
+}
+
+.piedepagina {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  max-width: 100%;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+
+  a {
+    display: inline-block;
+    text-align: center;
+    margin: 1rem;
+    color: #a05e5e;
+    text-decoration: none;
     justify-content: center;
+
+    &:hover {
+      color: #653a08;
+    }
   }
-  .social-icons {
-    a {
-      display: inline-block;
-      text-align: center;
-      margin: 1rem;
-      color: #a05e5e;
-      text-decoration: none;
-      justify-content: center;
-      &:hover {
-        color: #653a08;
-      }
-    }
-    .reds {
-      color: rgb(177, 106, 83);
-      justify-content: center;
-    }
-    h3 {
-      margin-top: 1rem;
-      justify-content: center;
-    }
+
+  .reds {
+    color: rgb(177, 106, 83);
+  }
+
+  h3 {
+    margin-top: 1rem;
   }
 }
+
 .encabezado {
   font-size: 10rem;
   color: rgb(31, 19, 2);
   text-align: center;
   padding: 2%;
   background: rgb(19, 14, 2);
-  background: radial-gradient(
-    circle,
-    rgba(237, 225, 200, 1) 0%,
-    rgba(235, 220, 193, 1) 0%,
-    rgba(255, 210, 158, 0.5606617647058824) 19%,
-    rgba(255, 212, 130, 0.5046393557422969) 48%,
-    rgba(224, 198, 142, 0.46262254901960786) 70%,
-    rgba(212, 182, 137, 0.5550595238095238) 83%,
-    rgba(201, 167, 98, 0.29175420168067223) 96%,
-    rgba(245, 219, 141, 0.6587009803921569) 100%,
-    rgba(255, 255, 255, 0.11808473389355745) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(237, 225, 200, 1) 0%,
+      rgba(235, 220, 193, 1) 0%,
+      rgba(255, 210, 158, 0.5606617647058824) 19%,
+      rgba(255, 212, 130, 0.5046393557422969) 48%,
+      rgba(224, 198, 142, 0.46262254901960786) 70%,
+      rgba(212, 182, 137, 0.5550595238095238) 83%,
+      rgba(201, 167, 98, 0.29175420168067223) 96%,
+      rgba(245, 219, 141, 0.6587009803921569) 100%,
+      rgba(255, 255, 255, 0.11808473389355745) 100%);
 }
+
 /*inicio-home pc*/
 .carousel-item img {
   object-fit: cover;
-  width: 180rem; 
-  height:150rem; 
-  max-width: 100%; 
-  max-height: 100%; 
+  width: 180rem;
+  height: 150rem;
+  max-width: 100%;
+  max-height: 100%;
 }
+
 /*galeria de productos*/
 .galeria {
   display: flex;
@@ -121,10 +145,12 @@ footer {
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
+
 .galeria-item {
   position: relative;
   width: calc(27% - 1rem);
   margin-bottom: 5rem;
+
   img {
     width: 99%;
     height: auto;
@@ -132,9 +158,11 @@ footer {
     flex-wrap: wrap;
     transition: transform 0.2s ease;
   }
+
   &:hover img {
     transform: scale(1.1);
   }
+
   .galeria-informacion {
     position: absolute;
     width: 95%;
@@ -147,10 +175,12 @@ footer {
     opacity: 0;
     transition: opacity 0.3s ease;
   }
+
   &:hover .galeria-informacion {
     opacity: 1;
   }
 }
+
 /*contacto formulario y lista*/
 .cont {
   display: flex;
@@ -158,58 +188,93 @@ footer {
   width: 2rem;
   height: auto;
   font-size: 2rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
   color: #653a08;
 }
+
 .list-group-item {
   display: flex;
   width: 100%;
 }
+
 /* pagina destacado*/
 .containertotal {
   overflow-x: hidden;
+  font-size: 1 rem;
 }
+
+.col-12.col-md-6  {
+  h2.espacio {
+    font-size: 2rem;
+  }
+}
+
+
 .col-12 {
   width: 50%;
 }
+
 .row {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .personalizada {
-  max-width: 100rem; 
+  max-width: 100rem;
   max-height: 200rem;
 }
-.mapa {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 30rem;
-  position: relative;
-  z-index: 1;
+
+.grid-text {
+  font-size: 1rem;
 }
-/*celular*/ /* galeria productos */
+
+.mapaconteiner {
+  position: relative;
+  max-width: 10rem;
+  max-height: 20rem;
+
+  .mapa {
+    position: absolute;
+    max-width: 10rem;
+    max-height: 20rem;
+    top: 0;
+    left: 0;
+  }
+}
+
+/*celular*/
 @media (max-width: 500px) {
-    .col-12.col-md-6.order-md-2 {
+  .col-12.col-md-6.order-md-2 {
     width: 100%;
-  }  .row {
+  }
+  .col-12.col-md-6  {
+    h2.espacio {
+      font-size: 1rem;
+    }
+  }
+  
+  .row {
     flex-wrap: wrap;
   }
+
   [class^="col-"] {
     flex-basis: 100%;
   }
+
   img {
-    max-width: 150rem; 
+    max-width: 150rem;
     max-height: 150rem;
   }
+
   .galeria {
     margin-right: 1rem;
+
     .galeria-informacion {
       padding: 0.1em;
     }
+
     .galeria-item {
       width: calc(50% - 1rem);
       margin-bottom: 2rem;
@@ -217,71 +282,105 @@ footer {
       margin-top: 1rem;
     }
   }
+
   .carousel-item {
     img {
       height: 100rem;
       object-fit: cover;
     }
   }
+
+  .piedepagina {
+    width: max-content;
+  }
 }
+
 .containertotal {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   img {
     width: 100%;
     height: auto;
   }
 }
+
 body {
   background-color: rgb(255, 255, 255);
+
   .texto {
     color: rgb(57, 34, 3);
     font-size: 1.4rem;
   }
 }
+
 .button {
   width: 100%;
   min-height: auto;
 }
+
 .encabezado {
   font-size: 1rem;
   color: rgb(65, 38, 2);
   background-color: aliceblue;
 }
+
+/*contacto formulario y lista*/
+.cont {
+  font-size: 1rem;
+}
+.list-group-item {
+  display: flex;
+  width: 100%;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
+
   /*pagina destacado*/
   .containertotal {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-  } .col-12 {justify-content: center;margin-top: 1rem;}
+  }
+
+  .col-12 {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
   /*galeria productos*/
   .galeria {
     padding: 3rem;
   }
+
   .galeria-item {
     width: 45%;
   }
+
   .galeria-informacion {
     padding: 0.1em;
   }
-  body{
+
+  body {
     color: rgb(58, 32, 0);
     background-color: white;
   }
+
   a {
     text-decoration: none;
     color: #f9f4f4d6;
   }
+
   .texto {
     align-items: center;
     width: 100%;
     font-size: 1.5rem;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .galeria {
     /*galeria productos*/
@@ -290,37 +389,42 @@ body {
     margin-top: 3rem;
     padding: 2rem;
   }
+
   .home {
     background-image: url("../assets/Home.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-bottom: 28rem;
   }
-  .productos
-  {
+
+  .productos {
     background-image: url("../assets/Productos.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-bottom: 22rem;
   }
+
   .politicas {
     background-image: url("../assets/Políticas.png");
     margin-bottom: 100rem;
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
+
   .contactos {
     background-image: url("../assets/contactos.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-bottom: 60rem;
   }
+
   .envios {
     background-image: url("../assets/envios.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-bottom: 60rem;
-  } 
+  }
+
   .texto {
     display: flex;
     justify-content: start;
@@ -328,6 +432,7 @@ body {
     align-items: start;
     color: #1f1404;
   }
+
   .espacio {
     letter-spacing: 0.4rem;
   }
