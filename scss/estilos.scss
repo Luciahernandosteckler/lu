@@ -1,45 +1,23 @@
+$color-principal: #b16310;
+
 html {
   font-size: 62.5%;
   /* 62.5% representa un 10px, 1em = 10px */
-  font-family: "Domine", serif;
-
-  p {
-    font-size: 2rem;
-  }
-
-  .texto {
-    display: flex;
-    text-align: center;
-    font-size: 2rem;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-    color: #2d1801;
-  }
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;}
+p {
+  font-size: 1rem;
 }
-
-.nav {
-
-  ul,
-  li,
-  .nav-item,
-  .navbar-expand-lg,
-  .bg-body-tertiary {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 4rem;
-    justify-content: space-around;
-  }
-
-  .d-flex {
-    display: flex;
-    justify-content: end;
-    width: fit-content;
-    color: #1f1404;
-    flex-direction: row;
+/*navegador general*/
+.navbar.bg-body-tertiary {
+  .nav-link.active,
+  & .navbar-brand,
+  & .navbar-brand.navbar-nav,
+  & .nav-link {
+    color: $color-principal;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
   }
 }
 
@@ -54,14 +32,12 @@ html {
   }
 }
 
-.a {
-  font-size: 2rem;
-
-  &:hover {
-    color: #653a08;
-  }
+.button {
+  width: 100%;
+  min-height: auto;
 }
 
+/*pie de pagina general*/
 footer {
   display: flex;
   justify-content: center;
@@ -92,6 +68,7 @@ footer {
     color: #a05e5e;
     text-decoration: none;
     justify-content: center;
+    font-size: 1rem;
 
     &:hover {
       color: #653a08;
@@ -107,13 +84,33 @@ footer {
   }
 }
 
+/*escritutas*/
+.start {
+  color: $color-principal;
+  font-size: 1.5rem;
+  padding: 1%;
+  margin-left: 1%;
+}
+.texto{
+  display: flex;
+  text-align: center;
+  font-size: 2rem;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.grid-text {
+  font-size: 1rem;
+}
+
 .encabezado {
-  font-size: 10rem;
-  color: rgb(31, 19, 2);
+  font-size: 4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: $color-principal;
   text-align: center;
   padding: 2%;
-  background: rgb(19, 14, 2);
-  background: radial-gradient(circle,
+  background-image: radial-gradient(circle,
       rgba(237, 225, 200, 1) 0%,
       rgba(235, 220, 193, 1) 0%,
       rgba(255, 210, 158, 0.5606617647058824) 19%,
@@ -181,7 +178,37 @@ footer {
   }
 }
 
-/*contacto formulario y lista*/
+/* pagina destacado*/
+.containertotal{ 
+overflow: hidden;}
+.row {
+  .col-12 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .grid-item {
+      flex-basis: calc(80.33% - 1em);
+      
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+      }
+
+      .grid-text {
+        margin-top: 1rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/*pagina contacto-formulario y lista*/
 .cont {
   display: flex;
   flex-direction: column;
@@ -189,45 +216,12 @@ footer {
   height: auto;
   font-size: 2rem;
   padding-left: 2rem;
-  color: #653a08;
+  color: $color-principal;
 }
 
 .list-group-item {
   display: flex;
   width: 100%;
-}
-
-/* pagina destacado*/
-.containertotal {
-  overflow-x: hidden;
-  font-size: 1 rem;
-}
-
-.col-12.col-md-6  {
-  h2.espacio {
-    font-size: 2rem;
-  }
-}
-
-
-.col-12 {
-  width: 50%;
-}
-
-.row {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.personalizada {
-  max-width: 100rem;
-  max-height: 200rem;
-}
-
-.grid-text {
-  font-size: 1rem;
 }
 
 .mapaconteiner {
@@ -244,30 +238,82 @@ footer {
   }
 }
 
+/*pagina home - animacion*/
+.carousel-item img {
+  object-fit: cover;
+  width: 180rem;
+  height: 150rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.animar {
+  overflow-x: hidden;
+}
+
+.animacion {
+  opacity: 0.5;
+  animation: moveText 1s infinite alternate;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-principal;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(2rem);
+  }
+}
+
 /*celular*/
 @media (max-width: 500px) {
-  .col-12.col-md-6.order-md-2 {
-    width: 100%;
+
+  /*Navegador general*/
+// Estilos de la barra de navegación
+.navbar.bg-body-tertiary {
+  .nav-link.active,
+  & .navbar-brand,
+  & .navbar.bg-body-tertiary .navbar-brand.navbar-nav,
+  & .nav-link {
+    font-size: 0.5rem;
   }
-  .col-12.col-md-6  {
-    h2.espacio {
+}
+
+// Estilos de la página destacada
+.col-12.col-md-6.order-md-2 {
+  width: 100%;
+
+  h2 {
+    .espacio {
       font-size: 1rem;
+      color:$color-principal
     }
   }
-  
+}
   .row {
     flex-wrap: wrap;
   }
 
   [class^="col-"] {
-    flex-basis: 100%;
+    flex: 1 1 100%;
   }
+  
 
   img {
     max-width: 150rem;
     max-height: 150rem;
   }
 
+  /*Pagina productos*/
   .galeria {
     margin-right: 1rem;
 
@@ -283,36 +329,50 @@ footer {
     }
   }
 
-  .carousel-item {
-    img {
-      height: 100rem;
-      object-fit: cover;
-    }
+  /*Pagina home-animacion*/
+  .carousel-item,
+  img {
+    height: 100rem;
+    object-fit: cover;
   }
 
+  .animacion {
+    font-size: 1rem;
+  }
+
+  /*Pie de pagina general*/
   .piedepagina {
     width: max-content;
   }
-}
 
-.containertotal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-  img {
-    width: 100%;
-    height: auto;
+  /*Pagina destacado*/
+  .containertotal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: auto;
+      
+    }
+    .col-12 {
+      justify-content: center;
+      margin-top: 1rem;
+    }
   }
-}
 
-body {
-  background-color: rgb(255, 255, 255);
+  body {
+    background-color: rgb(255, 255, 255);
+  }
 
-  .texto {
-    color: rgb(57, 34, 3);
-    font-size: 1.4rem;
+  .texto, .grid-text, .start{
+    color:$color-principal;
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
   }
 }
 
@@ -322,34 +382,48 @@ body {
 }
 
 .encabezado {
-  font-size: 1rem;
-  color: rgb(65, 38, 2);
+  font-size: 0.5rem;
+  color: $color-principal;
   background-color: aliceblue;
 }
 
 /*contacto formulario y lista*/
 .cont {
+  display: flex;
   font-size: 1rem;
+  justify-content: center;
+  text-align: center;
 }
+
 .list-group-item {
   display: flex;
   width: 100%;
+  text-align: center;
+  justify-content: center;
 }
+
 
 @media (min-width: 768px) and (max-width: 1023px) {
 
   /*pagina destacado*/
-  .containertotal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  .col-12.col-md-6.order-md-{
+    width: 100%;
+  
+    h2 {
+      .espacio {
+        font-size: 1rem;
+      }
+    }
   }
-
-  .col-12 {
-    justify-content: center;
-    margin-top: 1rem;
-  }
+  
+  [class^="col-"] {
+    flex: 1 1 50%;
+  }  
+  
+  img {
+      max-width: 100rem;
+      max-height: 100rem;
+    }
 
   /*galeria productos*/
   .galeria {
@@ -357,7 +431,7 @@ body {
   }
 
   .galeria-item {
-    width: 45%;
+    width: 33%;
   }
 
   .galeria-informacion {
@@ -365,7 +439,7 @@ body {
   }
 
   body {
-    color: rgb(58, 32, 0);
+    color: $color-principal;
     background-color: white;
   }
 
@@ -374,22 +448,47 @@ body {
     color: #f9f4f4d6;
   }
 
-  .texto {
+  .texto, .grid-text {
     align-items: center;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 0.5rem;
+    color:$color-principal;
+    justify-content: center;
+    text-align: center;
   }
 }
 
+
 @media screen and (min-width: 1024px) {
+
+  /* Escrituras */
+  .encabezado {
+    font-size: 1.2rem;
+  }
+
+  .texto {
+    display: flex;
+    text-align: center;
+    color: $color-principal;
+    font-size: 1.2rem;
+  }
+
+  .espacio {
+    letter-spacing: 0.4rem;
+    color: $color-principal;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
   .galeria {
-    /*galeria productos*/
+    /* Galeria de productos */
     margin-left: 4rem;
     margin-right: 4rem;
     margin-top: 3rem;
     padding: 2rem;
   }
 
+  /* Mis fondos para PC */
   .home {
     background-image: url("../assets/Home.png");
     background-repeat: no-repeat;
@@ -425,15 +524,4 @@ body {
     margin-bottom: 60rem;
   }
 
-  .texto {
-    display: flex;
-    justify-content: start;
-    text-align: start;
-    align-items: start;
-    color: #1f1404;
-  }
-
-  .espacio {
-    letter-spacing: 0.4rem;
-  }
 }
