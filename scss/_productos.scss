@@ -2,19 +2,18 @@ $color-principal: #b16310;
 
 .galeria {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     margin-top: 1rem;
-  }
+    overflow-x: hidden;
+    }
   
   .galeria-item {
     position: relative;
     width: calc(27% - 1rem);
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
   
     img {
       width: 99%;
@@ -39,6 +38,7 @@ $color-principal: #b16310;
       color: #fff;
       opacity: 0;
       transition: opacity 0.3s ease;
+      align-items: center;
     }
   
     &:hover .galeria-informacion {

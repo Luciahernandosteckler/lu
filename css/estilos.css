@@ -35,19 +35,18 @@
 }
 .galeria {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   margin-top: 1rem;
+  overflow-x: hidden;
 }
 
 .galeria-item {
   position: relative;
   width: calc(27% - 1rem);
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 .galeria-item img {
   width: 99%;
@@ -70,6 +69,7 @@
   color: #fff;
   opacity: 0;
   transition: opacity 0.3s ease;
+  align-items: center;
 }
 .galeria-item:hover .galeria-informacion {
   opacity: 1;
@@ -160,6 +160,11 @@ form.cont .button-enviar:hover {
 }
 
 /*celular*/
+.galeria {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 @media (max-width: 500px) {
   .navbar.bg-body-tertiary .nav-link.active, .navbar.bg-body-tertiary .navbar-brand, .navbar.bg-body-tertiary .navbar.bg-body-tertiary .navbar-brand.navbar-nav, .navbar.bg-body-tertiary .nav-link {
     font-size: 0.5rem;
@@ -277,13 +282,6 @@ form.cont .button-enviar:hover {
   }
 }
 @media screen and (min-width: 1024px) {
-  .galeria {
-    /* Galeria de productos */
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-top: 3rem;
-    padding: 2rem;
-  }
   /* Mis fondos para PC */
   .home {
     background-image: url("../assets/Home.png");
