@@ -1,0 +1,14 @@
+$color-principal: #b16310;
+.mapaconteiner {
+    position: relative;
+    max-width: 10rem;
+    max-height: 20rem;
+  
+    .mapa {
+      position: absolute;
+      max-width: 10rem;
+      max-height: 20rem;
+      top: 0;
+      left: 0;
+    }
+  }

@@ -1,0 +1,93 @@
+
+/*celular*/
+@media (max-width: 500px) {
+  .navbar.bg-body-tertiary {
+    .nav-link.active,
+    & .navbar-brand,
+    & .navbar.bg-body-tertiary .navbar-brand.navbar-nav,
+    & .nav-link {
+      font-size: 0.5rem;
+    }
+  }  
+    /*Pagina productos*/
+    .galeria {
+      margin-right: 1rem;
+  
+      .galeria-informacion {
+        padding: 0.1em;
+      }
+  
+      .galeria-item {
+        width: calc(50% - 1rem);
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+      }
+    }
+  
+    /*Pagina home-animacion*/
+    .carousel-item,
+    img {
+      height: 100rem;
+      object-fit: cover;
+    }
+  
+    .animacion {
+      font-size: 1rem;
+    }
+  
+    /*Pie de pagina general*/
+    .piedepagina {
+      width: max-content;
+    }
+  
+  
+    /*Pagina destacado*/
+    .containertotal {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      img {
+        width: 100%;
+        height: auto;
+        
+      }
+      .col-12 {
+        justify-content: center;
+        margin-top: 1rem;
+      }
+    }
+  
+    body {
+      background-color: rgb(255, 255, 255);
+    }
+  
+    .texto, .grid-text, .start{
+      color:$color-principal;
+      font-size: 1rem;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  
+  .button {
+    width: 100%;
+    min-height: auto;
+  }
+  
+  .encabezado {
+    font-size: 0.5rem;
+    color: $color-principal;
+    background-color: aliceblue;
+  }
+  
+  /*contacto formulario y lista*/
+  .form.cont {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    
+  }

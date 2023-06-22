@@ -1,0 +1,48 @@
+
+@media screen and (min-width: 1024px) {
+  
+    .galeria {
+      /* Galeria de productos */
+      margin-left: 4rem;
+      margin-right: 4rem;
+      margin-top: 3rem;
+      padding: 2rem;
+    }
+  
+    /* Mis fondos para PC */
+    .home {
+      background-image: url("../assets/Home.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      margin-bottom: 28rem;
+    }
+  
+    .productos {
+      background-image: url("../assets/Productos.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      margin-bottom: 22rem;
+    }
+  
+    .politicas {
+      background-image: url("../assets/Políticas.png");
+      margin-bottom: 100rem;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  
+    .contactos {
+      background-image: url("../assets/contactos.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      margin-bottom: 60rem;
+    }
+  
+    .envios {
+      background-image: url("../assets/envios.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      margin-bottom: 60rem;
+    }
+  
+  }

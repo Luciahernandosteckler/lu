@@ -1,13 +1,26 @@
+@import '_home.scss';
+@import '_productos.scss';
+@import '_destacado.scss';
+@import '_politicas.scss';
+@import '_contacto.scss';
+@import '_envios.scss';
+@import '_mobile-mq.scss';
+@import '_tablet-mq.scss';
+@import '_desktop-mq.scss';
+
 $color-principal: #b16310;
 
 html {
   font-size: 62.5%;
   /* 62.5% representa un 10px, 1em = 10px */
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;}
+  font-weight: 600;
+}
+
 p {
   font-size: 1rem;
 }
+
 /*navegador general*/
 .navbar.bg-body-tertiary {
   .nav-link.active,
@@ -15,7 +28,7 @@ p {
   & .navbar-brand.navbar-nav,
   & .nav-link {
     color: $color-principal;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
   }
@@ -42,7 +55,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.5rem;
+  font-size: 0.5Zrem;
   max-width: 100%;
 }
 
@@ -91,20 +104,30 @@ footer {
   padding: 1%;
   margin-left: 1%;
 }
-.texto{
+
+.texto {
   display: flex;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   align-items: center;
   width: 100%;
   justify-content: center;
+  color:$color-principal;
 }
+
 .grid-text {
-  font-size: 1rem;
+  font-size: 1.5rem;
+}
+
+.espacio {
+  letter-spacing: 0.4rem;
+  color: $color-principal;
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 .encabezado {
-  font-size: 4rem;
+  font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   color: $color-principal;
@@ -120,408 +143,4 @@ footer {
       rgba(201, 167, 98, 0.29175420168067223) 96%,
       rgba(245, 219, 141, 0.6587009803921569) 100%,
       rgba(255, 255, 255, 0.11808473389355745) 100%);
-}
-
-/*inicio-home pc*/
-.carousel-item img {
-  object-fit: cover;
-  width: 180rem;
-  height: 150rem;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-/*galeria de productos*/
-.galeria {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.galeria-item {
-  position: relative;
-  width: calc(27% - 1rem);
-  margin-bottom: 5rem;
-
-  img {
-    width: 99%;
-    height: auto;
-    display: block;
-    flex-wrap: wrap;
-    transition: transform 0.2s ease;
-  }
-
-  &:hover img {
-    transform: scale(1.1);
-  }
-
-  .galeria-informacion {
-    position: absolute;
-    width: 95%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-  &:hover .galeria-informacion {
-    opacity: 1;
-  }
-}
-
-/* pagina destacado*/
-.containertotal{ 
-overflow: hidden;}
-.row {
-  .col-12 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-
-    .grid-item {
-      flex-basis: calc(80.33% - 1em);
-      
-
-      img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        border-radius: 5px;
-        margin-bottom: 1rem;
-      }
-
-      .grid-text {
-        margin-top: 1rem;
-        text-align: center;
-      }
-    }
-  }
-}
-
-/*pagina contacto-formulario y lista*/
-.cont {
-  display: flex;
-  flex-direction: column;
-  width: 2rem;
-  height: auto;
-  font-size: 2rem;
-  padding-left: 2rem;
-  color: $color-principal;
-}
-
-.list-group-item {
-  display: flex;
-  width: 100%;
-}
-
-.mapaconteiner {
-  position: relative;
-  max-width: 10rem;
-  max-height: 20rem;
-
-  .mapa {
-    position: absolute;
-    max-width: 10rem;
-    max-height: 20rem;
-    top: 0;
-    left: 0;
-  }
-}
-
-/*pagina home - animacion*/
-.carousel-item img {
-  object-fit: cover;
-  width: 180rem;
-  height: 150rem;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.animar {
-  overflow-x: hidden;
-}
-
-.animacion {
-  opacity: 0.5;
-  animation: moveText 1s infinite alternate;
-  font-size: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: $color-principal;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-
-@keyframes moveText {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(2rem);
-  }
-}
-
-/*celular*/
-@media (max-width: 500px) {
-
-  /*Navegador general*/
-// Estilos de la barra de navegación
-.navbar.bg-body-tertiary {
-  .nav-link.active,
-  & .navbar-brand,
-  & .navbar.bg-body-tertiary .navbar-brand.navbar-nav,
-  & .nav-link {
-    font-size: 0.5rem;
-  }
-}
-
-// Estilos de la página destacada
-.col-12.col-md-6.order-md-2 {
-  width: 100%;
-
-  h2 {
-    .espacio {
-      font-size: 1rem;
-      color:$color-principal
-    }
-  }
-}
-  .row {
-    flex-wrap: wrap;
-  }
-
-  [class^="col-"] {
-    flex: 1 1 100%;
-  }
-  
-
-  img {
-    max-width: 150rem;
-    max-height: 150rem;
-  }
-
-  /*Pagina productos*/
-  .galeria {
-    margin-right: 1rem;
-
-    .galeria-informacion {
-      padding: 0.1em;
-    }
-
-    .galeria-item {
-      width: calc(50% - 1rem);
-      margin-bottom: 2rem;
-      margin-left: 1rem;
-      margin-top: 1rem;
-    }
-  }
-
-  /*Pagina home-animacion*/
-  .carousel-item,
-  img {
-    height: 100rem;
-    object-fit: cover;
-  }
-
-  .animacion {
-    font-size: 1rem;
-  }
-
-  /*Pie de pagina general*/
-  .piedepagina {
-    width: max-content;
-  }
-
-
-  /*Pagina destacado*/
-  .containertotal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    img {
-      width: 100%;
-      height: auto;
-      
-    }
-    .col-12 {
-      justify-content: center;
-      margin-top: 1rem;
-    }
-  }
-
-  body {
-    background-color: rgb(255, 255, 255);
-  }
-
-  .texto, .grid-text, .start{
-    color:$color-principal;
-    font-size: 1rem;
-    justify-content: center;
-    text-align: center;
-  }
-}
-
-.button {
-  width: 100%;
-  min-height: auto;
-}
-
-.encabezado {
-  font-size: 0.5rem;
-  color: $color-principal;
-  background-color: aliceblue;
-}
-
-/*contacto formulario y lista*/
-.cont {
-  display: flex;
-  font-size: 1rem;
-  justify-content: center;
-  text-align: center;
-}
-
-.list-group-item {
-  display: flex;
-  width: 100%;
-  text-align: center;
-  justify-content: center;
-}
-
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
-  /*pagina destacado*/
-  .col-12.col-md-6.order-md-{
-    width: 100%;
-  
-    h2 {
-      .espacio {
-        font-size: 1rem;
-      }
-    }
-  }
-  
-  [class^="col-"] {
-    flex: 1 1 50%;
-  }  
-  
-  img {
-      max-width: 100rem;
-      max-height: 100rem;
-    }
-
-  /*galeria productos*/
-  .galeria {
-    padding: 3rem;
-  }
-
-  .galeria-item {
-    width: 33%;
-  }
-
-  .galeria-informacion {
-    padding: 0.1em;
-  }
-
-  body {
-    color: $color-principal;
-    background-color: white;
-  }
-
-  a {
-    text-decoration: none;
-    color: #f9f4f4d6;
-  }
-
-  .texto, .grid-text {
-    align-items: center;
-    width: 100%;
-    font-size: 0.5rem;
-    color:$color-principal;
-    justify-content: center;
-    text-align: center;
-  }
-}
-
-
-@media screen and (min-width: 1024px) {
-
-  /* Escrituras */
-  .encabezado {
-    font-size: 1.2rem;
-  }
-
-  .texto {
-    display: flex;
-    text-align: center;
-    color: $color-principal;
-    font-size: 1.2rem;
-  }
-
-  .espacio {
-    letter-spacing: 0.4rem;
-    color: $color-principal;
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  .galeria {
-    /* Galeria de productos */
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-top: 3rem;
-    padding: 2rem;
-  }
-
-  /* Mis fondos para PC */
-  .home {
-    background-image: url("../assets/Home.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin-bottom: 28rem;
-  }
-
-  .productos {
-    background-image: url("../assets/Productos.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin-bottom: 22rem;
-  }
-
-  .politicas {
-    background-image: url("../assets/Políticas.png");
-    margin-bottom: 100rem;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-
-  .contactos {
-    background-image: url("../assets/contactos.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin-bottom: 60rem;
-  }
-
-  .envios {
-    background-image: url("../assets/envios.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin-bottom: 60rem;
-  }
-
 }
