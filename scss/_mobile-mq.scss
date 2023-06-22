@@ -1,85 +1,84 @@
-
 @media (max-width: 500px) {
- 
-    /*Pagina productos*/
+  /*Pagina productos*/
 
-    .galeria {
-      margin-left: 0;
-      margin-right: 0;
-  
-      .galeria-informacion {
-        padding: 0.1em;
-      }
-  
-      .galeria-item {
-        width: calc(50% - 1rem);
-       justify-content: space-evenly;
-      }
+  .galeria {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: space-evenly;
+
+    .galeria-informacion {
+      padding: 0.1em;
     }
-  
-    /*Pagina home-animacion*/
-    .carousel-item,
+
+    .galeria-item {
+      width: calc(48% - 1rem);
+      margin-bottom: 1.7rem;
+      justify-content: space-evenly;
+    }
+  }
+
+  /*Pagina home-animacion*/
+  .carousel-item,
+  img {
+    height: 100rem;
+    object-fit: cover;
+  }
+
+  .animacion {
+    font-size: 1rem;
+  }
+
+  /*Pie de pagina general*/
+  .piedepagina {
+    width: max-content;
+  }
+
+  /*Pagina destacado*/
+  .containertotal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     img {
-      height: 100rem;
-      object-fit: cover;
+      width: 100%;
+      height: auto;
     }
-  
-    .animacion {
-      font-size: 1rem;
-    }
-  
-    /*Pie de pagina general*/
-    .piedepagina {
-      width: max-content;
-    }
-  
-  
-    /*Pagina destacado*/
-    .containertotal {
-      display: flex;
-      flex-direction: column;
+    .col-12 {
       justify-content: center;
-      align-items: center;
-  
-      img {
-        width: 100%;
-        height: auto;
-        
-      }
-      .col-12 {
-        justify-content: center;
-        margin-top: 1rem;
-      }
+      margin-top: 1rem;
     }
-  
-    body {
-      background-color: rgb(255, 255, 255);
-    }
-  
-    .texto, .grid-text, .start{
-      color:$color-principal;
-      font-size: 1rem;
-      justify-content: center;
-      text-align: center;
-    }
-  
+  }
+
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .texto,
+  .grid-text,
+  .start {
+    color: $color-principal;
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+
   .button {
     width: 100%;
     min-height: auto;
   }
-  
+
   .encabezado {
     font-size: 0.5rem;
     color: $color-principal;
     background-color: aliceblue;
   }
-  
+
   /*contacto formulario y lista*/
   .form.cont {
     justify-content: center;
     text-align: center;
     align-items: center;
     width: 100%;
-    
   }
 }

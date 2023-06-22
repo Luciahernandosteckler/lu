@@ -1,8 +1,35 @@
 
 @media screen and (min-width: 1024px) {
 
+  /*escritutas*/
+.start {
+  color: $color-principal;
+  font-size: 2rem;
+  padding: 1%;
+  margin-left: 1%;
+}
 
-  
+.texto {
+  display: flex;
+  text-align: center;
+  font-size: 2rem;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  color:$color-principal;
+}
+
+.grid-text {
+  font-size: 2rem;
+}
+
+.espacio {
+  letter-spacing: 0.4rem;
+  color: $color-principal;
+  font-size: 2rem;
+  text-align: center;
+}
+
     /* Mis fondos para PC */
     .home {
       background-image: url("../assets/Home.png");
@@ -19,7 +46,7 @@
     }
   
     .politicas {
-      background-image: url("../assets/Políticas.png");
+      background-image: url("../assets/fondo3.jpg");
       margin-bottom: 100rem;
       background-repeat: no-repeat;
       background-size: 100% 100%;
@@ -38,5 +65,4 @@
       background-size: 100% 100%;
       margin-bottom: 60rem;
     }
-  
   }
