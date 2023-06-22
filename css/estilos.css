@@ -1,8 +1,14 @@
 @charset "UTF-8";
+/*navegador general*/
+.navbar.bg-body-tertiary .nav-link.active, .navbar.bg-body-tertiary .navbar-brand, .navbar.bg-body-tertiary .navbar-brand.navbar-nav, .navbar.bg-body-tertiary .nav-link {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 .carousel-item img {
   object-fit: cover;
-  width: 180rem;
-  height: 150rem;
+  width: 100rem;
+  height: 100rem;
   max-width: 100%;
   max-height: 100%;
   background-color: white;
@@ -159,28 +165,18 @@ form.cont .button-enviar:hover {
   left: 0;
 }
 
-/*celular*/
-.galeria {
-  margin-left: 0;
-  margin-right: 0;
-}
-
 @media (max-width: 500px) {
-  .navbar.bg-body-tertiary .nav-link.active, .navbar.bg-body-tertiary .navbar-brand, .navbar.bg-body-tertiary .navbar.bg-body-tertiary .navbar-brand.navbar-nav, .navbar.bg-body-tertiary .nav-link {
-    font-size: 0.5rem;
-  }
   /*Pagina productos*/
   .galeria {
-    margin-right: 1rem;
+    margin-left: 0;
+    margin-right: 0;
   }
   .galeria .galeria-informacion {
     padding: 0.1em;
   }
   .galeria .galeria-item {
     width: calc(50% - 1rem);
-    margin-bottom: 2rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
+    justify-content: space-evenly;
   }
   /*Pagina home-animacion*/
   .carousel-item,
@@ -219,26 +215,23 @@ form.cont .button-enviar:hover {
     justify-content: center;
     text-align: center;
   }
+  .button {
+    width: 100%;
+    min-height: auto;
+  }
+  .encabezado {
+    font-size: 0.5rem;
+    color: #b16310;
+    background-color: aliceblue;
+  }
+  /*contacto formulario y lista*/
+  .form.cont {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
 }
-.button {
-  width: 100%;
-  min-height: auto;
-}
-
-.encabezado {
-  font-size: 0.5rem;
-  color: #b16310;
-  background-color: aliceblue;
-}
-
-/*contacto formulario y lista*/
-.form.cont {
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  width: 100%;
-}
-
 @media (min-width: 768px) and (max-width: 1023px) {
   /*pagina destacado*/
   .col-12.col-md-6.order-md- {
@@ -328,7 +321,7 @@ p {
 /*navegador general*/
 .navbar.bg-body-tertiary .nav-link.active, .navbar.bg-body-tertiary .navbar-brand, .navbar.bg-body-tertiary .navbar-brand.navbar-nav, .navbar.bg-body-tertiary .nav-link {
   color: #b16310;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }

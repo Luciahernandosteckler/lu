@@ -1,9 +1,21 @@
 $color-principal: #b16310;
 
+  /*navegador general*/
+ 
+  .navbar.bg-body-tertiary {
+    .nav-link.active,
+    & .navbar-brand,
+    & .navbar-brand.navbar-nav,
+    & .nav-link {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+
 .carousel-item img {
   object-fit: cover;
-  width: 180rem;
-  height: 150rem;
+  width: 100rem;
+  height: 100rem;
   max-width: 100%;
   max-height: 100%;
   background-color: white;
