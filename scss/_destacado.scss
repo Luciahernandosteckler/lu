@@ -1,4 +1,7 @@
 $color-principal: #b16310;
+
+@import 'mixins/_escrituras-generales.scss';
+
 .containertotal{ 
     overflow: hidden;}
     .row {
@@ -10,8 +13,8 @@ $color-principal: #b16310;
     
         .grid-item {
           flex-basis: calc(80.33% - 1em);
+
           
-    
           img {
             display: block;
             width: 100%;
@@ -19,11 +22,7 @@ $color-principal: #b16310;
             border-radius: 5px;
             margin-bottom: 1rem;
           }
-          .espacio,
-          .grid-text {
-            margin-top: 1.5rem;
-            text-align: center;
-          }
+      
         }
       }
     }

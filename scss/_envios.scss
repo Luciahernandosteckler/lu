@@ -1,4 +1,13 @@
 $color-principal: #b16310;
+
+@import 'mixins/_escrituras-generales.scss';
+
+.infoenvio {
+width: 100%;
+.texto { font-size: 2rem;
+}
+}
+
 .mapaconteiner {
     position: relative;
     max-width: 10rem;

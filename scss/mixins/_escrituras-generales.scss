@@ -1,0 +1,37 @@
+//ESCRITURAS GENERALES
+
+// mixins.scss
+
+$color-principal: #b16310;
+
+@mixin estilo-start {
+.start {
+    color: $color-principal;
+    font-size: 2rem;
+    padding: 1%;
+    margin-left: 1%;
+}
+}
+
+@mixin estilo-texto {
+.texto {
+    display: flex;
+    text-align: center;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: $color-principal;
+}
+}
+
+@mixin estilo-grid-text {
+.grid-text {
+    font-size: 2rem;
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
+    color: $color-principal;
+    letter-spacing: 0.4rem;
+}
+}

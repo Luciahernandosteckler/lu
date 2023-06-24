@@ -1,68 +1,59 @@
 
+@import "mixins/_escrituras-generales.scss";
+
 @media screen and (min-width: 1024px) {
 
-  /*escritutas*/
+/*ESCRITURAS*/
+
 .start {
-  color: $color-principal;
-  font-size: 2rem;
-  padding: 1%;
-  margin-left: 1%;
+  @include estilo-start;
+
 }
 
 .texto {
-  display: flex;
-  text-align: center;
-  font-size: 2rem;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-  color:$color-principal;
+  @include estilo-texto;
+
 }
 
 .grid-text {
-  font-size: 2rem;
+  @include estilo-grid-text;
+
 }
 
-.espacio {
-  letter-spacing: 0.4rem;
-  color: $color-principal;
-  font-size: 2rem;
-  text-align: center;
-}
-
-    /* Mis fondos para PC */
-    .home {
-      background-image: url("../assets/Home.png");
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      margin-bottom: 28rem;
-    }
-  
-    .productos {
-      background-image: url("../assets/Productos.png");
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      margin-bottom: 22rem;
-    }
-  
-    .politicas {
-      background-image: url("../assets/fondo3.jpg");
-      margin-bottom: 100rem;
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-    }
-  
-    .contactos {
-      background-image: url("../assets/contactos.jpg");
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      margin-bottom: 60rem;
-    }
-  
-    .envios {
-      background-image: url("../assets/envios.jpg");
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      margin-bottom: 60rem;
-    }
+  /* Mis fondos para PC */
+  .home {
+    background-image: url("../assets/Home.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 28rem;
   }
+
+  .productos {
+    background-image: url("../assets/Productos.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 22rem;
+  }
+
+  .politicas {
+    background-image: url("../assets/fondo3.jpg");
+    margin-bottom: 100rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .contactos {
+    background-image: url("../assets/contactos.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 60rem;
+  }
+
+  .envios {
+    background-image: url("../assets/envios.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 60rem;
+  }
+}
+

@@ -1,4 +1,5 @@
 $color-principal: #b16310;
+@import 'mixins/_escrituras-generales.scss';
 
 .galeria {
     display: flex;

@@ -1,6 +1,9 @@
 /*pagina contacto-formulario y lista*/
 
+@import "mixins/escrituras-generales.scss";
+
 $color-principal: #b16310;
+
 
 /*CONTACT*/
 form.cont {
@@ -16,7 +19,8 @@ form.cont {
     .formulario {
       display: flex;
       flex-direction: column;
-      margin-bottom: 1rem;
+      min-height: 8rem;
+      min-width:20rem ;
   
       label {
         font-weight: bold;

@@ -1,27 +1,12 @@
+$color-principal: #b16310;
+
+@import "mixins/_escrituras-generales.scss";
+
 @media (min-width: 768px) and (max-width: 1023px) {
-  /*escritutas*/
-  .start {
-    color: $color-principal;
-    font-size: 1.5rem;
-    padding: 1%;
-    margin-left: 1%;
-  }
 
-  .texto {
-    display: flex;
-    text-align: center;
-    font-size: 1.5rem;
-    align-items: center;
-    width: 100%;
-  text-align: center;
-    color: $color-principal;
-  }
-
-  .grid-text {
-    font-size: 2rem;
-    margin-top: 10%;
-  text-align: center;
-
+  .formulario {
+    justify-content: space-evenly;
+    font-size: 1rem;
   }
 
   /*pagina destacado*/
@@ -29,11 +14,7 @@
     width: 100%;
 
     h2 {
-      .espacio {
-        letter-spacing: 0.4rem;
-        color: $color-principal;
-        font-size: 1.5rem;
-        text-align: center;
+      .grid-text { font-size: 0.5rem;}
       }
     }
   }
@@ -71,4 +52,18 @@
     text-decoration: none;
     color: #f9f4f4d6;
   }
+
+  /*ESCRITURAS*/
+
+  .start {
+    @include estilo-start;
+
+}
+
+.texto {
+    @include estilo-texto;
+}
+
+.grid-text {
+    @include estilo-grid-text;
 }

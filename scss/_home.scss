@@ -1,16 +1,7 @@
 $color-principal: #b16310;
 
-  /*navegador general*/
-  
-  .navbar.bg-body-tertiary {
-    .nav-link.active,
-    & .navbar-brand,
-    & .navbar-brand.navbar-nav,
-    & .nav-link {
-      font-size: 2rem;
-      font-weight: 600;
-    }
-  }
+@import 'mixins/_escrituras-generales.scss';
+
 
 .carousel-item img {
   object-fit: cover;

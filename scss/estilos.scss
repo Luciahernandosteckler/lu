@@ -1,19 +1,33 @@
-@import '_home.scss';
-@import '_productos.scss';
-@import '_destacado.scss';
-@import '_politicas.scss';
-@import '_contacto.scss';
-@import '_envios.scss';
-@import '_mobile-mq.scss';
-@import '_tablet-mq.scss';
-@import '_desktop-mq.scss';
+@import "_home.scss";
+@import "_productos.scss";
+@import "_destacado.scss";
+@import "_politicas.scss";
+@import "_contacto.scss";
+@import "_envios.scss";
+@import "_mobile-mq.scss";
+@import "_tablet-mq.scss";
+@import "_desktop-mq.scss";
+
+@import "mixins/_escrituras-generales.scss";
 
 $color-principal: #b16310;
+
+.start {
+  @include estilo-start;
+}
+
+.texto {
+  @include estilo-texto;
+}
+
+.grid-text {
+  @include estilo-grid-text;
+}
 
 html {
   font-size: 62.5%;
   /* 62.5% representa un 10px, 1em = 10px */
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
 
@@ -23,34 +37,54 @@ p {
 
 /*navegador general*/
 
-  .navbar.bg-body-tertiary {
-    .nav-link.active,
-    & .navbar-brand,
-    & .navbar-brand.navbar-nav,
-    & .nav-link {
-      color: $color-principal;
-      font-size: 2rem;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 300;
-    }
+.navbar.bg-body-tertiary {
+  .nav-link.active,
+  & .navbar-brand,
+  & .navbar-brand.navbar-nav,
+  & .nav-link {
+    color: $color-principal;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
   }
+}
 
-  .logo-container {
-    display: inline-block;
-    width: 100px;
-    margin-top: 10px;
+.logo-container {
+  display: inline-block;
+  width: 100px;
+  margin-top: 10px;
 
-    img {
-      width: 50%;
-      height: auto;
-    }
+  img {
+    width: 50%;
+    height: auto;
   }
+}
 
-  .button {
-    width: 100%;
-    min-height: auto;
-  }
+.button {
+  width: 100%;
+  min-height: auto;
+}
 
+.encabezado {
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: $color-principal;
+  text-align: center;
+  padding: 2%;
+  background-image: radial-gradient(
+    circle,
+    rgba(237, 225, 200, 1) 0%,
+    rgba(235, 220, 193, 1) 0%,
+    rgba(255, 210, 158, 0.5606617647058824) 19%,
+    rgba(255, 212, 130, 0.5046393557422969) 48%,
+    rgba(224, 198, 142, 0.46262254901960786) 70%,
+    rgba(212, 182, 137, 0.5550595238095238) 83%,
+    rgba(201, 167, 98, 0.29175420168067223) 96%,
+    rgba(245, 219, 141, 0.6587009803921569) 100%,
+    rgba(255, 255, 255, 0.11808473389355745) 100%
+  );
+}
 
 /*pie de pagina general*/
 footer {
@@ -89,32 +123,7 @@ footer {
       color: #653a08;
     }
   }
-
   .reds {
     color: rgb(177, 106, 83);
   }
-
-  h3 {
-    margin-top: 1rem;
-  }
-}
-
-
-.encabezado {
-  font-size: 1.8rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  color: $color-principal;
-  text-align: center;
-  padding: 2%;
-  background-image: radial-gradient(circle,
-      rgba(237, 225, 200, 1) 0%,
-      rgba(235, 220, 193, 1) 0%,
-      rgba(255, 210, 158, 0.5606617647058824) 19%,
-      rgba(255, 212, 130, 0.5046393557422969) 48%,
-      rgba(224, 198, 142, 0.46262254901960786) 70%,
-      rgba(212, 182, 137, 0.5550595238095238) 83%,
-      rgba(201, 167, 98, 0.29175420168067223) 96%,
-      rgba(245, 219, 141, 0.6587009803921569) 100%,
-      rgba(255, 255, 255, 0.11808473389355745) 100%);
 }
