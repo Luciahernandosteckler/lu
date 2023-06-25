@@ -1,7 +1,5 @@
 $color-principal: #b16310;
 
-@import 'mixins/_escrituras.scss';
-
 .galeria {
     display: flex;
     justify-content: space-evenly;
@@ -21,7 +19,6 @@ $color-principal: #b16310;
       width: 99%;
       height: auto;
       display: block;
-      flex-wrap: wrap;
       transition: transform 0.2s ease;
     }
   

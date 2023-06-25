@@ -1,7 +1,5 @@
 $color-principal: #b16310;
 
-@import 'mixins/_escrituras.scss';
-
 .containertotal{ 
     overflow: hidden;}
     .row {
@@ -19,7 +17,6 @@ $color-principal: #b16310;
             display: block;
             width: 100%;
             height: 100%;
-            border-radius: 5px;
             margin-bottom: 1rem;
           }
       

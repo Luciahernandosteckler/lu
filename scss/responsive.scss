@@ -1,0 +1,189 @@
+$color-principal: #b16310;
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 500px) {
+    @include estilo-start;
+    @include estilo-texto;
+    @include estilo-grid-text;
+
+    /* NAVEGADOR */
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+        font-size: 1rem;
+    }
+
+    /* Pagina productos */
+    .galeria {
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: space-evenly;
+
+        .galeria-informacion {
+            padding: 0.1em;
+        }
+
+        .galeria-item {
+            width: calc(48% - 1rem);
+            margin-bottom: 1.7rem;
+            justify-content: space-evenly;
+        }
+    }
+
+    /* Pagina home-animacion */
+    .carousel-item,
+    img {
+        height: 100rem;
+        object-fit: cover;
+    }
+
+    .animacion {
+        font-size: 1rem;
+    }
+
+    .encabezado--pequeño {
+        text-align: center;
+    }
+
+    .button {
+        width: 100%;
+        min-height: auto;
+    }
+
+    /* PAGINA DESTACADO */
+    .containertotal {
+        .row {
+            .col-12 {
+                &.col-md-6 {
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
+
+    /* contacto formulario y lista */
+    .formulario {
+        justify-content: space-evenly;
+        font-size: 1rem;
+    }
+
+    /* ESCRITURAS */
+    .start,
+    .texto,
+    .grid-text {
+        font-size: 1rem;
+    }
+
+    /* Fondo para dispositivos móviles */
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+/* Estilos para tablet */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    @include estilo-start;
+    @include estilo-texto;
+    @include estilo-grid-text;}
+
+    .encabezado {
+        text-align: start;
+    }
+
+    /* Escrituras */
+    .start,
+    .texto,
+    .grid-text {
+        font-size: 1.8rem;
+    }
+
+    .formulario {
+        justify-content: space-evenly;
+        font-size: 1rem;
+    }
+
+    /* pagina destacado */
+
+    .col-12.col-md-6.order-md- {
+        width: 100%;
+
+        h2 {
+            .grid-text {
+                font-size: 0.5rem;
+            }
+        }
+    }
+
+    [class^="col-"] {
+        flex: 1 1 50%;
+    }
+
+    img {
+        max-width: 100rem;
+        max-height: 100rem;
+    }
+
+    /* galeria productos */
+    .galeria {
+        padding: 3rem;
+    }
+
+    .galeria-item {
+        width: 30%;
+    }
+
+    .galeria-informacion {
+        padding: 0.1em;
+    }
+
+    a {
+        text-decoration: none;
+        color: #f9f4f4d6;
+    }
+
+
+
+@media (min-width: 1024px) {
+    @include estilo-start;
+    @include estilo-texto;
+    @include estilo-grid-text;
+
+
+/* Mis fondos para PC */
+
+    body.productos {
+        background-image: url("../assets/Productos.webp");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 22rem;
+    }
+    
+    body.politicas {
+        background-image: url("../assets/fondo3.webp");
+        margin-bottom: 100rem;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    body.contactos {
+        background-image: url("../assets/contactos.webp");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 60rem;
+    }
+    
+    body.envios {
+        background-image: url("../assets/envios.webp");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 60rem;
+    }
+    
+
+.encabezado {
+    .encabezado--grande {
+        text-align: center;
+    }
+}
+
+}
