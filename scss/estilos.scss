@@ -4,11 +4,12 @@
 @import "_politicas.scss";
 @import "_contacto.scss";
 @import "_envios.scss";
-@import "_mobile-mq.scss";
-@import "_tablet-mq.scss";
-@import "_desktop-mq.scss";
+@import "mixins/_escrituras.scss";
+@import "_mobile.scss";
+@import "_tablet.scss";
+@import "_desktop.scss";
 
-@import "mixins/_escrituras-generales.scss";
+
 
 $color-principal: #b16310;
 
@@ -65,7 +66,7 @@ p {
   min-height: auto;
 }
 
-.encabezado {
+%encabezado {
   font-size: 1.8rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -82,11 +83,22 @@ p {
     rgba(212, 182, 137, 0.5550595238095238) 83%,
     rgba(201, 167, 98, 0.29175420168067223) 96%,
     rgba(245, 219, 141, 0.6587009803921569) 100%,
-    rgba(255, 255, 255, 0.11808473389355745) 100%
-  );
+    rgba(255, 255, 255, 0.11808473389355745) 100%);
 }
 
+.encabezado--grande {
+  @extend %encabezado;
+  font-size: 2rem;
+}
+
+.encabezado--pequeño {
+  @extend %encabezado;
+  font-size: 1rem;
+}
+
+
 /*pie de pagina general*/
+
 footer {
   display: flex;
   justify-content: center;

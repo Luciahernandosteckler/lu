@@ -1,7 +1,10 @@
 
-@import "mixins/_escrituras-generales.scss";
+@import "mixins/_escrituras.scss";
 
 @media screen and (min-width: 1024px) {
+
+.encabezado--grande{text-align: center}
+
 
 /*ESCRITURAS*/
 
@@ -56,4 +59,5 @@
     margin-bottom: 60rem;
   }
 }
+
 

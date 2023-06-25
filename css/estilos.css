@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .carousel-item img {
   object-fit: cover;
   width: 100%;
@@ -237,8 +238,8 @@ form.cont .button-enviar:hover {
   body {
     background-color: rgb(255, 255, 255);
   }
-  .encabezado {
-    font-size: 1rem;
+  .encabezado--pequeño {
+    text-align: center;
   }
   .button {
     width: 100%;
@@ -255,6 +256,9 @@ form.cont .button-enviar:hover {
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
+  .encabezado {
+    text-align: center;
+  }
   .formulario {
     justify-content: space-evenly;
     font-size: 1rem;
@@ -328,6 +332,9 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+  .encabezado--grande {
+    text-align: center;
+  }
   /*ESCRITURAS*/
   .start .start {
     color: #b16310;
@@ -444,7 +451,7 @@ p {
   min-height: auto;
 }
 
-.encabezado {
+.encabezado--pequeño, .encabezado--grande {
   font-size: 1.8rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -452,6 +459,14 @@ p {
   text-align: center;
   padding: 2%;
   background-image: radial-gradient(circle, rgb(237, 225, 200) 0%, rgb(235, 220, 193) 0%, rgba(255, 210, 158, 0.5606617647) 19%, rgba(255, 212, 130, 0.5046393557) 48%, rgba(224, 198, 142, 0.462622549) 70%, rgba(212, 182, 137, 0.5550595238) 83%, rgba(201, 167, 98, 0.2917542017) 96%, rgba(245, 219, 141, 0.6587009804) 100%, rgba(255, 255, 255, 0.1180847339) 100%);
+}
+
+.encabezado--grande {
+  font-size: 2rem;
+}
+
+.encabezado--pequeño {
+  font-size: 1rem;
 }
 
 /*pie de pagina general*/

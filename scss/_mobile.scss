@@ -1,6 +1,6 @@
 $color-principal: #b16310;
 
-@import "mixins/_escrituras-generales.scss";
+@import "mixins/_escrituras.scss";
 
 @media (max-width: 500px) {
 
@@ -8,16 +8,19 @@ $color-principal: #b16310;
 
   .start {
     @include estilo-start;
+
     font-size: 1.5rem;
   }
 
   .texto {
     @include estilo-texto;
+
     font-size: 1.5rem;
   }
 
   .grid-text {
     @include estilo-grid-text;
+
     font-size: 1.5rem;
   }
 
@@ -71,9 +74,8 @@ footer {background-color: rgb(250, 217, 222);}
   }
 
 
-  .encabezado {
-    font-size: 1rem;
-  
+  .encabezado--pequeño
+  { text-align: center;
   }
 
 

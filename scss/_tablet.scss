@@ -1,8 +1,10 @@
 $color-principal: #b16310;
 
-@import "mixins/_escrituras-generales.scss";
+@import "mixins/_escrituras.scss";
 
 @media (min-width: 768px) and (max-width: 1023px) {
+
+  .encabezado{text-align: center;}
 
   .formulario {
     justify-content: space-evenly;
