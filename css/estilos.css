@@ -9,6 +9,10 @@
 }
 
 /*texto con movimiento*/
+.animar {
+  overflow-x: hidden;
+}
+
 .animacion {
   opacity: 0.5;
   animation: moveText 1s infinite alternate;
