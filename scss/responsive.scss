@@ -40,8 +40,8 @@ $color-principal: #b16310;
         font-size: 1rem;
     }
 
-    .encabezado--pequeño {
-        text-align: center;
+    .encabezado {
+        font-size: 1/2rem;
     }
 
     .button {
@@ -67,10 +67,20 @@ $color-principal: #b16310;
     }
 
     /* ESCRITURAS */
-    .start,
-    .texto,
+    .start {
+        font-size: 1/2rem;
+    }
+
+    .texto {
+        font-size: 1/2rem;
+    }
+
     .grid-text {
-        font-size: 1rem;
+        font-size: 1/2rem;
+    }
+
+    .espacio {
+        font-size: 1/2rem;
     }
 
     /* Fondo para dispositivos móviles */
@@ -87,14 +97,14 @@ $color-principal: #b16310;
     @include estilo-grid-text;}
 
     .encabezado {
-        text-align: start;
+        font-size: 1rem;
     }
 
     /* Escrituras */
     .start,
     .texto,
     .grid-text {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .formulario {
@@ -109,7 +119,7 @@ $color-principal: #b16310;
 
         h2 {
             .grid-text {
-                font-size: 0.5rem;
+                font-size: 1/2rem;
             }
         }
     }
@@ -140,7 +150,7 @@ $color-principal: #b16310;
         text-decoration: none;
         color: #f9f4f4d6;
     }
-
+   
 
 
 @media (min-width: 1024px) {
@@ -173,7 +183,7 @@ $color-principal: #b16310;
     }
     
     body.envios {
-        background-image: url("../assets/envios.webp");
+        background-image: url("../assets/fondo3.webp");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         margin-bottom: 60rem;
@@ -181,9 +191,7 @@ $color-principal: #b16310;
     
 
 .encabezado {
-    .encabezado--grande {
-        text-align: center;
-    }
+font-size: 1.5rem;
 }
 
 }

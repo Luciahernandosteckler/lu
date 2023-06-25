@@ -210,8 +210,8 @@ form.cont .button-enviar:hover {
   .animacion {
     font-size: 1rem;
   }
-  .encabezado--pequeño {
-    text-align: center;
+  .encabezado {
+    font-size: 1/2rem;
   }
   .button {
     width: 100%;
@@ -227,10 +227,17 @@ form.cont .button-enviar:hover {
     font-size: 1rem;
   }
   /* ESCRITURAS */
-  .start,
-  .texto,
+  .start {
+    font-size: 1/2rem;
+  }
+  .texto {
+    font-size: 1/2rem;
+  }
   .grid-text {
-    font-size: 1rem;
+    font-size: 1/2rem;
+  }
+  .espacio {
+    font-size: 1/2rem;
   }
   /* Fondo para dispositivos móviles */
   body {
@@ -263,15 +270,15 @@ form.cont .button-enviar:hover {
     letter-spacing: 0.4rem;
   }
 }
-.encabezado, .encabezado--pequeño, .encabezado--grande {
-  text-align: start;
+.encabezado {
+  font-size: 1rem;
 }
 
 /* Escrituras */
 .start,
 .texto,
 .grid-text {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .formulario {
@@ -284,7 +291,7 @@ form.cont .button-enviar:hover {
   width: 100%;
 }
 .col-12.col-md-6.order-md- h2 .grid-text {
-  font-size: 0.5rem;
+  font-size: 1/2rem;
 }
 
 [class^=col-] {
@@ -358,13 +365,13 @@ a {
     margin-bottom: 60rem;
   }
   body.envios {
-    background-image: url("../assets/envios.webp");
+    background-image: url("../assets/fondo3.webp");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-bottom: 60rem;
   }
-  .encabezado .encabezado--grande, .encabezado--pequeño .encabezado--grande, .encabezado--grande .encabezado--grande {
-    text-align: center;
+  .encabezado {
+    font-size: 1.5rem;
   }
 }
 .start .start {
@@ -427,8 +434,7 @@ p {
   min-height: auto;
 }
 
-.encabezado, .encabezado--pequeño, .encabezado--grande {
-  font-size: 1.8rem;
+.encabezado {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: #b16310;
@@ -437,16 +443,8 @@ p {
   background-image: radial-gradient(circle, rgb(237, 225, 200) 0%, rgb(235, 220, 193) 0%, rgba(255, 210, 158, 0.5606617647) 19%, rgba(255, 212, 130, 0.5046393557) 48%, rgba(224, 198, 142, 0.462622549) 70%, rgba(212, 182, 137, 0.5550595238) 83%, rgba(201, 167, 98, 0.2917542017) 96%, rgba(245, 219, 141, 0.6587009804) 100%, rgba(255, 255, 255, 0.1180847339) 100%);
 }
 
-.encabezado--grande {
-  font-size: 2rem;
-}
-
-.encabezado--pequeño {
-  font-size: 1rem;
-}
-
 /*pie de pagina general*/
-footer {
+.estilos-comunes, .social-icons, .piedepagina, .footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -456,19 +454,8 @@ footer {
 
 .piedepagina {
   padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  max-width: 100%;
 }
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-}
 .social-icons a {
   display: inline-block;
   text-align: center;
