@@ -20,6 +20,9 @@ $color-principal: #b16310;
       height: auto;
       display: block;
       transition: transform 0.2s ease;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   
     &:hover img {

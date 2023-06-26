@@ -1,16 +1,9 @@
 $color-principal: #b16310;
-
 /* Estilos para dispositivos móviles */
 @media (max-width: 500px) {
     @include estilo-start;
     @include estilo-texto;
     @include estilo-grid-text;
-
-    /* NAVEGADOR */
-    .navbar .navbar-brand,
-    .navbar .nav-link {
-        font-size: 1rem;
-    }
 
     /* Pagina productos */
     .galeria {
@@ -41,7 +34,7 @@ $color-principal: #b16310;
     }
 
     .encabezado {
-        font-size: 1/2rem;
+        font-size: 0.5rem; /* Usar una unidad válida, como rem o em */
     }
 
     .button {
@@ -68,24 +61,25 @@ $color-principal: #b16310;
 
     /* ESCRITURAS */
     .start {
-        font-size: 1/2rem;
+        font-size: 0.5rem; /* Usar una unidad válida, como rem o em */
     }
 
     .texto {
-        font-size: 1/2rem;
+        font-size: 0.5rem; /* Usar una unidad válida, como rem o em */
     }
 
     .grid-text {
-        font-size: 1/2rem;
+        font-size: 0.5rem; /* Usar una unidad válida, como rem o em */
     }
 
     .espacio {
-        font-size: 1/2rem;
+        font-size: 0.5rem; /* Usar una unidad válida, como rem o em */
     }
 
     /* Fondo para dispositivos móviles */
-    body {
-        background-color: rgb(255, 255, 255);
+    .politicas, .envios, .productos, .home, .contactos {
+        background: rgb(255,213,231);
+        background: linear-gradient(90deg, rgba(255,213,231,1) 0%, rgba(255,255,255,1) 100%);
     }
 }
 
@@ -94,7 +88,7 @@ $color-principal: #b16310;
 @media (min-width: 768px) and (max-width: 1023px) {
     @include estilo-start;
     @include estilo-texto;
-    @include estilo-grid-text;}
+    @include estilo-grid-text;
 
     .encabezado {
         font-size: 1rem;
@@ -115,14 +109,7 @@ $color-principal: #b16310;
     /* pagina destacado */
 
     .col-12.col-md-6.order-md- {
-        width: 100%;
-
-        h2 {
-            .grid-text {
-                font-size: 1/2rem;
-            }
-        }
-    }
+        width: 100%;}
 
     [class^="col-"] {
         flex: 1 1 50%;
@@ -151,7 +138,7 @@ $color-principal: #b16310;
         color: #f9f4f4d6;
     }
    
-
+}
 
 @media (min-width: 1024px) {
     @include estilo-start;
@@ -168,13 +155,6 @@ $color-principal: #b16310;
         margin-bottom: 22rem;
     }
     
-    body.politicas {
-        background-image: url("../assets/fondo3.webp");
-        margin-bottom: 100rem;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
-    
     body.contactos {
         background-image: url("../assets/contactos.webp");
         background-repeat: no-repeat;
@@ -182,16 +162,14 @@ $color-principal: #b16310;
         margin-bottom: 60rem;
     }
     
-    body.envios {
-        background-image: url("../assets/fondo3.webp");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        margin-bottom: 60rem;
+    body.envios, .politicas {
+        background: rgb(255,213,231);
+        background: linear-gradient(90deg, rgba(255,213,231,1) 0%, rgba(255,255,255,1) 100%);
     }
     
 
 .encabezado {
-font-size: 1.5rem;
+font-size: 2rem;
 }
 
 }
