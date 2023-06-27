@@ -1,175 +1,183 @@
 $color-principal: #b16310;
+
 /* Estilos para dispositivos móviles */
+
 @media (max-width: 500px) {
-    @include estilo-start;
-    @include estilo-texto;
-    @include estilo-grid-text;
+@include estilo-start;
+@include estilo-texto;
+@include estilo-grid-text;
 
-    /* Pagina productos */
-    .galeria {
-        margin-left: 0;
-        margin-right: 0;
-        justify-content: space-evenly;
+  /* Pagina productos */
 
-        .galeria-informacion {
-            padding: 0.1em;
+.galeria {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: space-evenly;
+
+    .galeria-informacion {
+    padding: 0.1em;
+    }
+
+    .galeria-item {
+    width: calc(48% - 1rem);
+    margin-bottom: 1.7rem;
+    justify-content: space-evenly;
+    }
+}
+
+  /* Pagina home-animacion */
+.carousel-item,
+img {
+    height: 100rem;
+    object-fit: cover;
+}
+
+.animacion {
+    font-size: 1rem;
+}
+
+.encabezado {
+    font-size: 1rem;
+}
+
+.button {
+    width: 100%;
+    min-height: auto;
+}
+
+  /* PAGINA DESTACADO */
+.containertotal {
+    .row {
+    .col-12 {
+        &.col-md-6 {
+        flex-basis: 100%;
         }
-
-        .galeria-item {
-            width: calc(48% - 1rem);
-            margin-bottom: 1.7rem;
-            justify-content: space-evenly;
-        }
     }
-
-    /* Pagina home-animacion */
-    .carousel-item,
-    img {
-        height: 100rem;
-        object-fit: cover;
     }
+}
 
-    .animacion {
-        font-size: 1rem;
-    }
+  /* contacto formulario y lista */
 
-    .encabezado {
-        font-size: 0.5rem; /* Usar una unidad válida, como rem o em */
-    }
+.formulario {
+    justify-content: space-evenly;
+    font-size: 1rem;
+}
 
-    .button {
-        width: 100%;
-        min-height: auto;
-    }
+  /* ESCRITURAS */
+.start,
+.texto,
+.grid-text {
+    font-size: 1.3rem;
+}
 
-    /* PAGINA DESTACADO */
-    .containertotal {
-        .row {
-            .col-12 {
-                &.col-md-6 {
-                    flex-basis: 100%;
-                }
-            }
-        }
-    }
-
-    /* contacto formulario y lista */
-    .formulario {
-        justify-content: space-evenly;
-        font-size: 1rem;
-    }
-
-    /* ESCRITURAS */
-    .start {
-        font-size: 0.5rem; /* Usar una unidad válida, como rem o em */
-    }
-
-    .texto {
-        font-size: 0.5rem; /* Usar una unidad válida, como rem o em */
-    }
-
-    .grid-text {
-        font-size: 0.5rem; /* Usar una unidad válida, como rem o em */
-    }
-
-    .espacio {
-        font-size: 0.5rem; /* Usar una unidad válida, como rem o em */
-    }
-
-    /* Fondo para dispositivos móviles */
-    .politicas, .envios, .productos, .home, .contactos {
-        background: rgb(255,213,231);
-        background: linear-gradient(90deg, rgba(255,213,231,1) 0%, rgba(255,255,255,1) 100%);
-    }
+  /* Fondo para dispositivos móviles */
+.politicas,
+.envios,
+.productos,
+.home,
+.contactos {
+    background: rgb(255, 213, 231);
+    background: linear-gradient(
+    90deg,
+    rgba(255, 213, 231, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+    );
+}
 }
 
 /* Estilos para tablet */
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    @include estilo-start;
-    @include estilo-texto;
-    @include estilo-grid-text;
+@include estilo-start;
+@include estilo-texto;
+@include estilo-grid-text;
 
-    .encabezado {
-        font-size: 1rem;
-    }
+.encabezado {
+    font-size: 1.8rem;
+}
 
-    /* Escrituras */
-    .start,
-    .texto,
-    .grid-text {
-        font-size: 2rem;
-    }
+  /* Escrituras */
+.start,
+.texto,
+.grid-text {
+    font-size: 2rem;
+}
 
-    .formulario {
-        justify-content: space-evenly;
-        font-size: 1rem;
-    }
+.formulario {
+    justify-content: space-evenly;
+    font-size: 1rem;
+}
 
-    /* pagina destacado */
+  /* pagina destacado */
 
-    .col-12.col-md-6.order-md- {
-        width: 100%;}
+.col-12.col-md-6.order-md- {
+    width: 100%;
+}
 
-    [class^="col-"] {
-        flex: 1 1 50%;
-    }
+[class^="col-"] {
+    flex: 1 1 50%;
+}
 
-    img {
-        max-width: 100rem;
-        max-height: 100rem;
-    }
+img {
+    max-width: 100rem;
+    max-height: 100rem;
+}
 
-    /* galeria productos */
-    .galeria {
-        padding: 3rem;
-    }
+  /* galeria productos */
+.galeria {
+    padding: 3rem;
+}
 
-    .galeria-item {
-        width: 30%;
-    }
+.galeria-item {
+    width: 30%;
+}
 
-    .galeria-informacion {
-        padding: 0.1em;
-    }
+.galeria-informacion {
+    padding: 0.1em;
+}
 
     a {
         text-decoration: none;
         color: #f9f4f4d6;
     }
-   
+
 }
 
 @media (min-width: 1024px) {
-    @include estilo-start;
-    @include estilo-texto;
-    @include estilo-grid-text;
+@include estilo-start;
+@include estilo-texto;
+@include estilo-grid-text;
 
+  /* Mis fondos para PC */
 
-/* Mis fondos para PC */
+body.productos {
+    background-image: url("../assets/Productos.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 22rem;
+}
 
-    body.productos {
-        background-image: url("../assets/Productos.webp");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        margin-bottom: 22rem;
-    }
-    
-    body.contactos {
-        background-image: url("../assets/contactos.webp");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        margin-bottom: 60rem;
-    }
-    
-    body.envios, .politicas {
-        background: rgb(255,213,231);
-        background: linear-gradient(90deg, rgba(255,213,231,1) 0%, rgba(255,255,255,1) 100%);
-    }
-    
+body.contactos {
+    background-image: url("../assets/contactos.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 60rem;
+}
+
+.envios,
+.politicas {
+    background: rgb(255, 213, 231);
+    background: linear-gradient(
+    90deg,
+    rgba(255, 213, 231, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+    );
+}
+
 
 .encabezado {
-font-size: 2rem;
+    font-size: 2rem;
+    
 }
 
 }

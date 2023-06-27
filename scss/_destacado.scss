@@ -1,25 +1,23 @@
 $color-principal: #b16310;
 
-.containertotal{ 
-    overflow: hidden;}
-    .row {
-      .col-12 {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-    
-        .grid-item {
-          flex-basis: calc(80.33% - 1em);
+.containertotal {
+  overflow: hidden;
+}
+.row {
+  .col-12 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 
-          
-          img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            margin-bottom: 1rem;
-          }
-      
-        }
+    .grid-item {
+      flex-basis: calc(80.33% - 1em);
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 1rem;
       }
     }
+  }
+}

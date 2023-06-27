@@ -5,18 +5,18 @@
 $color-principal: #b16310;
 
 @mixin estilo-start {
-.start {
+    .start {
     color: $color-principal;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 1%;
     margin-left: 1%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-weight: 900;
-}
+    }
 }
 
 @mixin estilo-texto {
-.texto {
+        .texto {
     display: flex;
     text-align: center;
     font-size: 2rem;
@@ -24,11 +24,11 @@ $color-principal: #b16310;
     justify-content: center;
     width: 100%;
     color: $color-principal;
-}
+    }
 }
 
 @mixin estilo-grid-text {
-.grid-text {
+    .grid-text {
     font-size: 2rem;
     margin-top: 10%;
     text-align: center;
@@ -36,6 +36,5 @@ $color-principal: #b16310;
     color: $color-principal;
     letter-spacing: 0.2rem;
     font-family: "Montserrat", sans-serif;
-  
-}
+    }
 }

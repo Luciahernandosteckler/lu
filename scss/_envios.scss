@@ -1,20 +1,21 @@
 $color-principal: #b16310;
 
 .infoenvio {
-width: 100%;
+  width: 100%;
 }
 
 
 .mapaconteiner {
-    position: relative;
+  position: relative;
+  max-width: 10rem;
+  max-height: 20rem;
+
+  .mapa {
+    position: absolute;
     max-width: 10rem;
     max-height: 20rem;
-  
-    .mapa {
-      position: absolute;
-      max-width: 10rem;
-      max-height: 20rem;
-      top: 0;
-      left: 0;
-    }
+    top: 0;
+    left: 0;
   }
+}
+

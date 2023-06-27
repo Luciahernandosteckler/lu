@@ -164,7 +164,7 @@ form.cont .button-enviar:hover {
 @media (max-width: 500px) {
   .start {
     color: #b16310;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 1%;
     margin-left: 1%;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -212,7 +212,7 @@ form.cont .button-enviar:hover {
     font-size: 1rem;
   }
   .encabezado {
-    font-size: 0.5rem; /* Usar una unidad válida, como rem o em */
+    font-size: 1rem;
   }
   .button {
     width: 100%;
@@ -228,20 +228,17 @@ form.cont .button-enviar:hover {
     font-size: 1rem;
   }
   /* ESCRITURAS */
-  .start {
-    font-size: 0.5rem; /* Usar una unidad válida, como rem o em */
-  }
-  .texto {
-    font-size: 0.5rem; /* Usar una unidad válida, como rem o em */
-  }
+  .start,
+  .texto,
   .grid-text {
-    font-size: 0.5rem; /* Usar una unidad válida, como rem o em */
-  }
-  .espacio {
-    font-size: 0.5rem; /* Usar una unidad válida, como rem o em */
+    font-size: 1.3rem;
   }
   /* Fondo para dispositivos móviles */
-  .politicas, .envios, .productos, .home, .contactos {
+  .politicas,
+  .envios,
+  .productos,
+  .home,
+  .contactos {
     background: rgb(255, 213, 231);
     background: linear-gradient(90deg, rgb(255, 213, 231) 0%, rgb(255, 255, 255) 100%);
   }
@@ -250,7 +247,7 @@ form.cont .button-enviar:hover {
 @media (min-width: 768px) and (max-width: 1023px) {
   .start {
     color: #b16310;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 1%;
     margin-left: 1%;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -275,7 +272,7 @@ form.cont .button-enviar:hover {
     font-family: "Montserrat", sans-serif;
   }
   .encabezado {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
   /* Escrituras */
   .start,
@@ -316,7 +313,7 @@ form.cont .button-enviar:hover {
 @media (min-width: 1024px) {
   .start {
     color: #b16310;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 1%;
     margin-left: 1%;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -353,7 +350,8 @@ form.cont .button-enviar:hover {
     background-size: 100% 100%;
     margin-bottom: 60rem;
   }
-  body.envios, .politicas {
+  .envios,
+  .politicas {
     background: rgb(255, 213, 231);
     background: linear-gradient(90deg, rgb(255, 213, 231) 0%, rgb(255, 255, 255) 100%);
   }
@@ -363,7 +361,7 @@ form.cont .button-enviar:hover {
 }
 .start .start {
   color: #b16310;
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 1%;
   margin-left: 1%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
