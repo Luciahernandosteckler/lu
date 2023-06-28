@@ -10,8 +10,6 @@ $color-principal: #b16310;
     align-items: center;
     justify-content: space-between;
 
-    .grid-item {
-      flex-basis: calc(80.33% - 1em);
       img {
         display: block;
         width: 100%;
@@ -19,5 +17,5 @@ $color-principal: #b16310;
         margin-bottom: 1rem;
       }
     }
+    
   }
-}

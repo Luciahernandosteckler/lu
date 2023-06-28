@@ -87,10 +87,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.row .col-12 .grid-item {
-  flex-basis: calc(80.33% - 1em);
-}
-.row .col-12 .grid-item img {
+.row .col-12 img {
   display: block;
   width: 100%;
   height: 100%;
@@ -181,9 +178,8 @@ form.cont .button-enviar:hover {
   }
   .grid-text {
     font-size: 2rem;
-    margin-top: 10%;
     text-align: center;
-    justify-content: center;
+    justify-content: space-evenly;
     color: #b16310;
     letter-spacing: 0.2rem;
     font-family: "Montserrat", sans-serif;
@@ -234,6 +230,7 @@ form.cont .button-enviar:hover {
     font-size: 1.3rem;
   }
   /* Fondo para dispositivos móviles */
+  .destacados,
   .politicas,
   .envios,
   .productos,
@@ -264,21 +261,20 @@ form.cont .button-enviar:hover {
   }
   .grid-text {
     font-size: 2rem;
-    margin-top: 10%;
     text-align: center;
-    justify-content: center;
+    justify-content: space-evenly;
     color: #b16310;
     letter-spacing: 0.2rem;
     font-family: "Montserrat", sans-serif;
   }
   .encabezado {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   /* Escrituras */
   .start,
   .texto,
   .grid-text {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .formulario {
     justify-content: space-evenly;
@@ -330,9 +326,8 @@ form.cont .button-enviar:hover {
   }
   .grid-text {
     font-size: 2rem;
-    margin-top: 10%;
     text-align: center;
-    justify-content: center;
+    justify-content: space-evenly;
     color: #b16310;
     letter-spacing: 0.2rem;
     font-family: "Montserrat", sans-serif;
@@ -356,7 +351,7 @@ form.cont .button-enviar:hover {
     background: linear-gradient(90deg, rgb(255, 213, 231) 0%, rgb(255, 255, 255) 100%);
   }
   .encabezado {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 .start .start {
@@ -380,9 +375,8 @@ form.cont .button-enviar:hover {
 
 .grid-text .grid-text {
   font-size: 2rem;
-  margin-top: 10%;
   text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
   color: #b16310;
   letter-spacing: 0.2rem;
   font-family: "Montserrat", sans-serif;
@@ -402,9 +396,13 @@ p {
 /*navegador general*/
 .navbar.bg-body-tertiary .nav-link.active, .navbar.bg-body-tertiary .navbar-brand, .navbar.bg-body-tertiary .navbar-brand.navbar-nav, .navbar.bg-body-tertiary .nav-link {
   color: #b16310;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
+}
+.navbar.bg-body-tertiary .navbar-brand {
+  justify-content: center;
+  text-align: center;
 }
 
 .logo-container {
