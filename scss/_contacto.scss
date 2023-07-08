@@ -18,10 +18,11 @@ form.cont {
     display: flex;
     flex-direction: column;
     min-height: 8rem;
-    min-width: 20rem;
+    min-width: 30rem;
 
     label {
       font-weight: bold;
+      font-size: 1.5rem;
     }
 
     input,
@@ -34,7 +35,7 @@ form.cont {
 
       &:focus {
         outline: none;
-        border-color: rgb(254, 254, 255);
+        border-color: rgb(242, 197, 243);
       }
     }
   }
@@ -51,4 +52,5 @@ form.cont {
       background-color: pink;
     }
   }
+  
 }

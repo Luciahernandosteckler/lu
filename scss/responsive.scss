@@ -19,7 +19,7 @@ $color-principal: #b16310;
         }
 
         .galeria-item {
-            width: calc(48% - 1rem);
+            width: calc(45% - 1rem);
             margin-bottom: 1.7rem;
             justify-content: space-evenly;
         }
@@ -63,6 +63,8 @@ $color-principal: #b16310;
         font-size: 1rem;
     }
 
+form.cont {align-items:center; }
+
     /* ESCRITURAS */
     .start,
     .texto,
@@ -70,9 +72,13 @@ $color-principal: #b16310;
         font-size: 1.3rem;
     }
 
-    /* Fondo para dispositivos móviles */
+    label {
+        font-weight: bold;
+        font-size: 1rem;
+}
 
-    .destacados,
+
+    /* Fondo para dispositivos móviles */
     .politicas,
     .envios,
     .productos,
@@ -83,7 +89,7 @@ $color-principal: #b16310;
                 rgba(255, 213, 231, 1) 0%,
                 rgba(255, 255, 255, 1) 100%);}
 }
-    
+
 
 
 /* Estilos para tablet */
@@ -150,29 +156,15 @@ $color-principal: #b16310;
     @include estilo-grid-text;
 
     /* Mis fondos para PC */
-
-    body.productos {
-        background-image: url("../assets/Productos.webp");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        margin-bottom: 22rem;
-    }
-
-    body.contactos {
-        background-image: url("../assets/contactos.webp");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        margin-bottom: 60rem;
-    }
-
+    .contacto,
     .envios,
-    .politicas {
+    .politicas, 
+    .productos {
         background: rgb(255, 213, 231);
         background: linear-gradient(90deg,
                 rgba(255, 213, 231, 1) 0%,
                 rgba(255, 255, 255, 1) 100%);
     }
-
 
     .encabezado {
         font-size: 1.7rem;
