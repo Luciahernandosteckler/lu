@@ -1,17 +1,7 @@
 @charset "UTF-8";
-/*carrusel con animacion*/
-.container-fluid {
-  max-height: 150rem;
-  overflow: hidden;
-}
-
-.carousel-inner {
-  height: 40%;
-}
-
-.carousel-item img {
-  height: 50%;
-  object-fit: cover;
+.full-height {
+  height: 79vh;
+  width: auto;
 }
 
 /*texto con movimiento*/
@@ -22,7 +12,7 @@
 .animacion {
   opacity: 0.5;
   animation: moveText 1s infinite alternate;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,24 +175,25 @@ form.cont .button-enviar:hover {
 @media (max-width: 500px) {
   .start {
     color: #b16310;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     padding: 1%;
-    margin-left: 1%;
+    margin-left: 0.2%;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-weight: 900;
   }
   .texto {
     display: flex;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     align-items: center;
     justify-content: center;
     width: 100%;
     color: #b16310;
   }
   .grid-text {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-align: center;
+    align-items: flex-start;
     justify-content: space-evenly;
     color: #b16310;
     letter-spacing: 0.2rem;
@@ -233,16 +224,10 @@ form.cont .button-enviar:hover {
     width: 100%;
     min-height: auto;
   }
-  /*Flotante para mensajes o promociones*/
-  .sticky-element {
-    position: fixed;
-    margin-right: 0%;
-    top: 30%;
-  }
-  .sticky-element img {
-    display: block;
-    width: 1rem;
-    height: auto;
+  /* Flotante para mensajes o promociones */
+  .sticky-element img,
+  .sticky-element .sticky {
+    width: 4rem;
   }
   /* PAGINA DESTACADO */
   .containertotal .row .col-12.col-md-6 {
@@ -260,7 +245,7 @@ form.cont .button-enviar:hover {
   .start,
   .texto,
   .grid-text {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   label {
     font-weight: bold;
@@ -280,24 +265,25 @@ form.cont .button-enviar:hover {
 @media (min-width: 768px) and (max-width: 1023px) {
   .start {
     color: #b16310;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     padding: 1%;
-    margin-left: 1%;
+    margin-left: 0.2%;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-weight: 900;
   }
   .texto {
     display: flex;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     align-items: center;
     justify-content: center;
     width: 100%;
     color: #b16310;
   }
   .grid-text {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-align: center;
+    align-items: flex-start;
     justify-content: space-evenly;
     color: #b16310;
     letter-spacing: 0.2rem;
@@ -345,24 +331,25 @@ form.cont .button-enviar:hover {
 @media (min-width: 1024px) {
   .start {
     color: #b16310;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     padding: 1%;
-    margin-left: 1%;
+    margin-left: 0.2%;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-weight: 900;
   }
   .texto {
     display: flex;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     align-items: center;
     justify-content: center;
     width: 100%;
     color: #b16310;
   }
   .grid-text {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-align: center;
+    align-items: flex-start;
     justify-content: space-evenly;
     color: #b16310;
     letter-spacing: 0.2rem;
@@ -382,9 +369,9 @@ form.cont .button-enviar:hover {
 }
 .start .start {
   color: #b16310;
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   padding: 1%;
-  margin-left: 1%;
+  margin-left: 0.2%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 900;
 }
@@ -392,7 +379,7 @@ form.cont .button-enviar:hover {
 .texto .texto {
   display: flex;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -400,8 +387,9 @@ form.cont .button-enviar:hover {
 }
 
 .grid-text .grid-text {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-align: center;
+  align-items: flex-start;
   justify-content: space-evenly;
   color: #b16310;
   letter-spacing: 0.2rem;
@@ -422,22 +410,24 @@ p {
 /*navegador general*/
 .navbar.bg-body-tertiary .nav-link.active, .navbar.bg-body-tertiary .navbar-brand, .navbar.bg-body-tertiary .navbar-brand.navbar-nav, .navbar.bg-body-tertiary .nav-link {
   color: #b16310;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
+  max-height: 10%;
 }
 .navbar.bg-body-tertiary .navbar-brand {
   justify-content: center;
   text-align: center;
+  max-height: 20%;
 }
 
 .logo-container {
   display: inline-block;
-  width: 100px;
-  margin-top: 10px;
+  width: 9rem;
+  margin-top: 5px;
 }
 .logo-container img {
-  width: 50%;
+  width: 40%;
   height: auto;
 }
 
@@ -451,7 +441,7 @@ p {
   font-weight: 300;
   color: #b16310;
   text-align: center;
-  padding: 1%;
+  padding: 0.5%;
   background: rgb(247, 194, 169);
   background: linear-gradient(90deg, rgb(247, 194, 169) 0%, rgb(255, 199, 240) 51%, rgb(255, 227, 170) 100%);
 }
@@ -459,7 +449,7 @@ p {
 /*Estilo para flotante de mensajes o promociones*/
 .sticky-element {
   position: fixed;
-  top: 43%;
+  top: 63%;
   right: 0;
   margin-right: 1%;
   transform: translateY(-50%);
@@ -470,7 +460,7 @@ p {
 }
 .sticky-element img {
   display: block;
-  width: 7rem;
+  width: 5rem;
   height: auto;
 }
 .sticky-element:hover {
@@ -482,22 +472,29 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1rem;
   max-width: 100%;
 }
 
+.footer {
+  font-size: 1rem;
+}
+
 .piedepagina {
-  padding: 1rem;
+  padding: 0.5rem;
+  position: sticky;
+  bottom: 0;
+  font-size: 1rem;
 }
 
 .social-icons a {
   display: inline-block;
   text-align: center;
-  margin: 1rem;
+  margin: 0.5rem;
   color: #a05e5e;
   text-decoration: none;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .social-icons a:hover {
   color: #653a08;

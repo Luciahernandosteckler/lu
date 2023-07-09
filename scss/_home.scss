@@ -1,20 +1,7 @@
 $color-principal: #b16310;
 
-
-/*carrusel con animacion*/
-
-.container-fluid {
-  max-height: 150rem; 
-  overflow: hidden;
-}
-
-.carousel-inner {
-  height: 40%;
-}
-
-.carousel-item img {
-  height: 50%;
-  object-fit: cover;
+.full-height {
+  height: 79vh; width: auto;
 }
 
 /*texto con movimiento*/
@@ -26,7 +13,7 @@ $color-principal: #b16310;
 .animacion {
   opacity: 0.5;
   animation: moveText 1s infinite alternate;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   display: flex;
   justify-content: center;
   align-items: center;

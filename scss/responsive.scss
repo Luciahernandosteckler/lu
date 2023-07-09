@@ -1,7 +1,6 @@
 $color-principal: #b16310;
 
 /* Estilos para dispositivos móviles */
-
 @media (max-width: 500px) {
     @include estilo-start;
     @include estilo-texto;
@@ -26,7 +25,6 @@ $color-principal: #b16310;
     }
 
     /* Pagina home-animacion */
-   
 
     .animacion {
         font-size: 1rem;
@@ -40,19 +38,17 @@ $color-principal: #b16310;
         width: 100%;
         min-height: auto;
     }
-/*Flotante para mensajes o promociones*/
 
-.sticky-element {
-  position: fixed;
-  margin-right: 0%;
-  top:30%;
-  img {
-    display: block;
-    width: 1rem;
-    height: auto;
-  }
-}
-      
+    /* Flotante para mensajes o promociones */
+    .sticky-element {
+
+        img,
+        .sticky {
+            width: 4rem;
+
+        }
+    }
+
     /* PAGINA DESTACADO */
     .containertotal {
         .row {
@@ -71,20 +67,21 @@ $color-principal: #b16310;
         font-size: 1rem;
     }
 
-form.cont {align-items:center; }
+    form.cont {
+        align-items: center;
+    }
 
     /* ESCRITURAS */
     .start,
     .texto,
     .grid-text {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     label {
         font-weight: bold;
         font-size: 1rem;
-}
-
+    }
 
     /* Fondo para dispositivos móviles */
     .politicas,
@@ -93,10 +90,10 @@ form.cont {align-items:center; }
     .home,
     .contactos {
         background: rgb(255, 213, 231);
-        background: linear-gradient(90deg,
-                rgba(255, 213, 231, 1) 0%,
-                rgba(255, 255, 255, 1) 100%);}
+        background: linear-gradient(90deg, rgba(255, 213, 231, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    }
 }
+
 
 
 
@@ -166,7 +163,7 @@ form.cont {align-items:center; }
     /* Mis fondos para PC */
     .contacto,
     .envios,
-    .politicas, 
+    .politicas,
     .productos {
         background: rgb(255, 213, 231);
         background: linear-gradient(90deg,
