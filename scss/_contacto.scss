@@ -17,8 +17,8 @@ form.cont {
   .formulario {
     display: flex;
     flex-direction: column;
-    min-height: 8rem;
-    min-width: 30rem;
+    min-height: 6rem;
+    min-width: 27rem;
 
     label {
       font-weight: bold;
@@ -28,7 +28,7 @@ form.cont {
     input,
     textarea {
       border-radius: 1rem;
-      padding: 0.5rem;
+      padding: 0.8rem;
       border: 1px solid;
       color: $color-principal;
       width: 100%;
@@ -41,6 +41,7 @@ form.cont {
   }
 
   .button-enviar {
+    margin-top: 10px;
     border-radius: 1rem;
     padding: 0.5rem;
     background-color: $color-principal;
@@ -52,5 +53,4 @@ form.cont {
       background-color: pink;
     }
   }
-  
 }

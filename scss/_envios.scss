@@ -1,10 +1,5 @@
 $color-principal: #b16310;
 
-.infoenvio {
-  width: 100%;
-}
-
-
 .mapaconteiner {
   position: relative;
   max-width: 10rem;
@@ -17,5 +12,10 @@ $color-principal: #b16310;
     top: 0;
     left: 0;
   }
+
+.envios--{
+  margin-left: 5%;
+  margin-right: 5%;
+}
 }
 

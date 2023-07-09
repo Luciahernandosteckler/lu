@@ -26,11 +26,7 @@ $color-principal: #b16310;
     }
 
     /* Pagina home-animacion */
-    .carousel-item,
-    img {
-        height: 100rem;
-        object-fit: cover;
-    }
+   
 
     .animacion {
         font-size: 1rem;
@@ -44,7 +40,19 @@ $color-principal: #b16310;
         width: 100%;
         min-height: auto;
     }
+/*Flotante para mensajes o promociones*/
 
+.sticky-element {
+  position: fixed;
+  margin-right: 0%;
+  top:30%;
+  img {
+    display: block;
+    width: 1rem;
+    height: auto;
+  }
+}
+      
     /* PAGINA DESTACADO */
     .containertotal {
         .row {
@@ -107,7 +115,7 @@ form.cont {align-items:center; }
     .start,
     .texto,
     .grid-text {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 
     .formulario {
@@ -167,7 +175,7 @@ form.cont {align-items:center; }
     }
 
     .encabezado {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
 
     }
 

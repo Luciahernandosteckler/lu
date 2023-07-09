@@ -3,8 +3,8 @@ $color-principal: #b16310;
 .containertotal {
   overflow: hidden;
   justify-content: space-evenly;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 .row {
   .col-12 {
@@ -19,6 +19,8 @@ $color-principal: #b16310;
         width: 100%;
         height: auto;
       }
+
+      .sticky-element{ font: 3rem;}
     }
     
   

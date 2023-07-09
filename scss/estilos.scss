@@ -68,10 +68,10 @@ p {
 
 .encabezado {
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 300;
   color: $color-principal;
   text-align: center;
-  padding: 2%;
+  padding: 1%;
   background: rgb(247, 194, 169);
   background: linear-gradient(
     90deg,
@@ -80,7 +80,27 @@ p {
     rgba(255, 227, 170, 1) 100%
   );
 }
+/*Estilo para flotante de mensajes o promociones*/
 
+.sticky-element {
+  position: fixed;
+  top: 43%;
+  right: 0;
+  margin-right: 1%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  opacity: 0.2;
+  img {
+    display: block; 
+    width: 7rem; 
+    height: auto;
+  }
+  border-radius: 100%/100%;
+  box-shadow: 0 2px 4px rgba(232, 148, 255, 0.8);
+  &:hover {
+    background-color: #FFD700;
+}
+}
 
 
 /*pie de pagina general*/
