@@ -1,32 +1,46 @@
 @charset "UTF-8";
-.full-height {
-  height: 79vh;
+.subtitulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: rgb(211, 29, 29);
+  text-align: center;
+  font-weight: 300;
+}
+
+.colores {
+  background: linear-gradient(90deg, rgb(247, 194, 169) 0%, rgb(255, 199, 240) 51%, rgb(255, 227, 170) 100%);
+  padding: 1.5%;
+}
+
+.carousel-inner {
+  height: 75vh;
+}
+
+.carousel-item img {
+  max-height: 100%;
   width: auto;
 }
 
 /*texto con movimiento*/
-.animar {
-  overflow-x: hidden;
-}
-
-.animacion {
-  opacity: 0.5;
-  animation: moveText 1s infinite alternate;
-  font-size: 1.1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.homeanime {
+  font-family: "Abril Fatface", cursive;
   color: #b16310;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
+  font-size: 1.2rem;
+  font-weight: 200;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s infinite alternate;
 }
 
-@keyframes moveText {
+@keyframes fadeIn {
   0% {
-    transform: translateX(0);
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
   }
   100% {
-    transform: translateX(2rem);
+    opacity: 0.7;
   }
 }
 .galeria {
@@ -116,17 +130,17 @@ form.cont {
   height: auto;
   font-size: 1rem;
   padding-left: 1rem;
+  margin-bottom: 15%;
   color: #b16310;
 }
 form.cont .formulario {
   display: flex;
   flex-direction: column;
-  min-height: 6rem;
-  min-width: 27rem;
+  height: 100%;
 }
 form.cont .formulario label {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 form.cont .formulario input,
 form.cont .formulario textarea {
@@ -140,6 +154,11 @@ form.cont .formulario input:focus,
 form.cont .formulario textarea:focus {
   outline: none;
   border-color: rgb(242, 197, 243);
+}
+form.cont .containertotalcontacto img {
+  flex-direction: row;
+  width: 20%;
+  height: 50%;
 }
 form.cont .button-enviar {
   margin-top: 10px;
@@ -249,7 +268,7 @@ form.cont .button-enviar:hover {
   }
   label {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
   /* Fondo para dispositivos móviles */
   .politicas,
@@ -356,7 +375,7 @@ form.cont .button-enviar:hover {
     font-family: "Montserrat", sans-serif;
   }
   /* Mis fondos para PC */
-  .contacto,
+  .contactos,
   .envios,
   .politicas,
   .productos {
@@ -410,15 +429,14 @@ p {
 /*navegador general*/
 .navbar.bg-body-tertiary .nav-link.active, .navbar.bg-body-tertiary .navbar-brand, .navbar.bg-body-tertiary .navbar-brand.navbar-nav, .navbar.bg-body-tertiary .nav-link {
   color: #b16310;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  max-height: 10%;
+  font-weight: 600;
 }
 .navbar.bg-body-tertiary .navbar-brand {
   justify-content: center;
   text-align: center;
-  max-height: 20%;
+  max-height: 5%;
 }
 
 .logo-container {
@@ -477,14 +495,17 @@ p {
 }
 
 .footer {
-  font-size: 1rem;
+  font-size: 0.5rem;
+  margin-top: auto; /* Agrega esta línea */
 }
 
 .piedepagina {
   padding: 0.5rem;
   position: sticky;
   bottom: 0;
-  font-size: 1rem;
+  font-size: 0.5rem;
+  background: linear-gradient(90deg, rgb(247, 194, 169) 0%, rgb(255, 199, 240) 51%, rgb(255, 227, 170) 100%);
+  margin-top: auto; /* Agrega esta línea */
 }
 
 .social-icons a {
@@ -494,7 +515,7 @@ p {
   color: #a05e5e;
   text-decoration: none;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 0.5rem;
 }
 .social-icons a:hover {
   color: #653a08;

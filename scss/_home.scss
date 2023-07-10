@@ -1,34 +1,51 @@
 $color-principal: #b16310;
 
-.full-height {
-  height: 79vh; width: auto;
+.subtitulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: rgb(211, 29, 29);
+  text-align: center;
+  font-weight: 300;
+
 }
+
+.colores {
+  background: linear-gradient(90deg, rgba(247, 194, 169, 1) 0%, rgba(255, 199, 240, 1) 51%, rgba(255, 227, 170, 1) 100%);
+  padding: 1.5%;
+}
+
+.carousel-inner {
+  height: 75vh;
+}
+
+.carousel-item img {
+  max-height: 100%;
+  width: auto;
+}
+
 
 /*texto con movimiento*/
 
-.animar {
-  overflow-x: hidden;
-}
-
-.animacion {
-  opacity: 0.5;
-  animation: moveText 1s infinite alternate;
-  font-size: 1.1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.homeanime {
+  font-family: 'Abril Fatface', cursive;
   color: $color-principal;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-
+  font-size: 1.2rem;
+  font-weight: 200;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s infinite alternate;
 }
 
-@keyframes moveText {
+@keyframes fadeIn {
   0% {
-    transform: translateX(0);
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 0.4;
   }
 
   100% {
-    transform: translateX(2rem);
+    opacity: 0.7;
   }
 }

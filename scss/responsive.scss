@@ -7,7 +7,6 @@ $color-principal: #b16310;
     @include estilo-grid-text;
 
     /* Pagina productos */
-
     .galeria {
         margin-left: 0;
         margin-right: 0;
@@ -26,10 +25,11 @@ $color-principal: #b16310;
 
     /* Pagina home-animacion */
 
+
     .animacion {
         font-size: 1rem;
     }
-
+      
     .encabezado {
         font-size: 1rem;
     }
@@ -45,7 +45,6 @@ $color-principal: #b16310;
         img,
         .sticky {
             width: 4rem;
-
         }
     }
 
@@ -61,7 +60,6 @@ $color-principal: #b16310;
     }
 
     /* contacto formulario y lista */
-
     .formulario {
         justify-content: space-evenly;
         font-size: 1rem;
@@ -80,7 +78,7 @@ $color-principal: #b16310;
 
     label {
         font-weight: bold;
-        font-size: 1rem;
+        font-size: 0.5rem;
     }
 
     /* Fondo para dispositivos móviles */
@@ -93,7 +91,6 @@ $color-principal: #b16310;
         background: linear-gradient(90deg, rgba(255, 213, 231, 1) 0%, rgba(255, 255, 255, 1) 100%);
     }
 }
-
 
 
 
@@ -161,7 +158,7 @@ $color-principal: #b16310;
     @include estilo-grid-text;
 
     /* Mis fondos para PC */
-    .contacto,
+    .contactos,
     .envios,
     .politicas,
     .productos {
