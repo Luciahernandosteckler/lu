@@ -557,13 +557,15 @@ p {
 }
 
 .piedepagina {
+  position: fixed;
+  width: 100%;
   padding: 0.5rem;
-  position: sticky;
   bottom: 0;
-  top: 0;
+  z-index: 1000;
   font-size: 1rem;
   background: linear-gradient(90deg, rgb(247, 194, 169) 0%, rgb(255, 199, 240) 51%, rgb(255, 227, 170) 100%);
   margin-top: auto;
+  margin-bottom: 0;
 }
 
 .social-icons a {

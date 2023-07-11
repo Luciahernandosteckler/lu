@@ -129,14 +129,17 @@ p {
 
 .piedepagina {
   @extend .estilos-comunes;
+  position: fixed;
+  width: 100%;
   padding: 0.5rem;
-  position: sticky;
   bottom: 0;
-  top:0;
+  z-index: 1000;
   font-size: 1rem;
   background: linear-gradient(90deg, rgba(247, 194, 169, 1) 0%, rgba(255, 199, 240, 1) 51%, rgba(255, 227, 170, 1) 100%);
-  margin-top: auto; 
+  margin-top: auto;
+  margin-bottom: 0;
 }
+
 
 .social-icons {
   @extend .estilos-comunes;
