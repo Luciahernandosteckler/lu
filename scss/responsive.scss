@@ -58,6 +58,7 @@ $color-principal: #b16310;
         margin-bottom: 5%;
 }
 
+
     /* Flotante para mensajes o promociones */
 
     .sticky-element {
@@ -68,6 +69,7 @@ $color-principal: #b16310;
     }
 
     /* PAGINA DESTACADO */
+    
     .containertotal {
         .row {
             .col-12 {
@@ -77,6 +79,9 @@ $color-principal: #b16310;
             }
         }
     }
+
+    .destacados  {
+        padding-bottom: 20%; }
 
     /* contacto formulario y lista */
     .formulario {
@@ -95,6 +100,7 @@ $color-principal: #b16310;
     .button-enviar { font-size: 1rem;}
 
     /* ESCRITURAS */
+
     .start,
     .texto,
     .grid-text {
@@ -136,6 +142,7 @@ $color-principal: #b16310;
 }
 
     /* Escrituras */
+
     .start,
     .texto,
     .grid-text {
@@ -147,7 +154,7 @@ $color-principal: #b16310;
         font-size: 1rem;
     }
 
-    /* pagina destacado */
+    /* Pagina destacado */
 
     .col-12.col-md-6.order-md-1 {
         width: 100%;
@@ -162,7 +169,7 @@ $color-principal: #b16310;
         max-height: 100rem;
     }
 
-    /* galeria productos */
+    /* Galeria productos */
     .galeria {
         padding: 3rem;
     }

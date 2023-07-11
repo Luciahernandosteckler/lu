@@ -12,10 +12,6 @@
   padding: 1.5%;
 }
 
-.rosa {
-  color: pink;
-}
-
 /*texto con movimiento*/
 .animaciondetexto, .textobanner, .homeanime {
   font-family: "Abril Fatface", cursive;
@@ -53,6 +49,10 @@
     opacity: 0.7;
   }
 }
+.productos {
+  padding-bottom: 10%;
+}
+
 .galeria {
   display: flex;
   justify-content: space-evenly;
@@ -125,9 +125,10 @@
   font: 3rem;
 }
 
-.politicas- {
-  margin-left: 5%;
-  margin-right: 5%;
+.politicatex {
+  margin-bottom: 2%;
+  margin-top: 3%;
+  padding-bottom: 20%;
 }
 
 /*pagina contacto-formulario y lista*/
@@ -278,6 +279,9 @@ form.cont .button-enviar:hover {
   .containertotal .row .col-12.col-md-6 {
     flex-basis: 100%;
   }
+  .destacados {
+    padding-bottom: 20%;
+  }
   /* contacto formulario y lista */
   .formulario {
     justify-content: space-evenly;
@@ -357,7 +361,7 @@ form.cont .button-enviar:hover {
     justify-content: space-evenly;
     font-size: 1rem;
   }
-  /* pagina destacado */
+  /* Pagina destacado */
   .col-12.col-md-6.order-md-1 {
     width: 100%;
   }
@@ -368,7 +372,7 @@ form.cont .button-enviar:hover {
     max-width: 100rem;
     max-height: 100rem;
   }
-  /* galeria productos */
+  /* Galeria productos */
   .galeria {
     padding: 3rem;
   }
