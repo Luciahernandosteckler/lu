@@ -1,6 +1,7 @@
 $color-principal: #b16310;
 
 /* Estilos para dispositivos móviles */
+
 @media (max-width: 500px) {
     @include estilo-start;
     @include estilo-texto;
@@ -11,6 +12,7 @@ $color-principal: #b16310;
         margin-left: 0;
         margin-right: 0;
         justify-content: space-evenly;
+    }
 
         .galeria-informacion {
             padding: 0.1em;
@@ -22,17 +24,28 @@ $color-principal: #b16310;
             margin-top: 1rem;
             justify-content: space-evenly;
         }
-    }
+    
 
     /* Pagina home-animacion */
 
-      
     .animacion {
+        font-size: 1.5rem;
+    }
+
+    .encabezado {
+        font-size: 1.3rem;
+    }
+
+    .subtitulo {
         font-size: 1rem;
     }
-      
-    .encabezado {
-        font-size: 1rem;
+
+    .homeanime{
+    font-size: 1.2rem;
+    }
+
+    .textobanner{
+        font-size: 1.2rem;
     }
 
     .button {
@@ -41,12 +54,12 @@ $color-principal: #b16310;
     }
 
     /* Flotante para mensajes o promociones */
-    .sticky-element {
 
-        img,
-        .sticky {
-            width: 4rem;
-        }
+    .sticky-element {
+        top: 35%;
+        img {
+        width: 4rem; 
+    }
     }
 
     /* PAGINA DESTACADO */
@@ -70,11 +83,17 @@ $color-principal: #b16310;
         align-items: center;
     }
 
+    .label { font-size: 1rem;}
+
+    .input, .textarea{ font-size: 1rem;}
+
+    .button-enviar { font-size: 1rem;}
+
     /* ESCRITURAS */
     .start,
     .texto,
     .grid-text {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
     label {
@@ -87,17 +106,7 @@ $color-principal: #b16310;
             font-size: 1.5rem;
         }
     }
-
-    /* Fondo para dispositivos móviles */
-    .politicas,
-    .envios,
-    .productos,
-    .contactos {
-        background: rgb(255, 213, 231);
-        background: linear-gradient(90deg, rgba(255, 213, 231, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    }
 }
-
 
 
 /* Estilos para tablet */
@@ -110,6 +119,16 @@ $color-principal: #b16310;
     .encabezado {
         font-size: 1.5rem;
     }
+
+
+/* Flotante para mensajes o promociones */
+
+.sticky-element {
+    top: 20%;
+    img {
+    width: 8rem; 
+}
+}
 
     /* Escrituras */
     .start,
@@ -125,7 +144,7 @@ $color-principal: #b16310;
 
     /* pagina destacado */
 
-    .col-12.col-md-6.order-md- {
+    .col-12.col-md-6.order-md-1 {
         width: 100%;
     }
 
@@ -155,28 +174,38 @@ $color-principal: #b16310;
         text-decoration: none;
         color: #f9f4f4d6;
     }
+/*Pagina contacto*/
+
+.button-enviar {  font-size: 2rem;}
+input,
+textarea { font-size: 3rem;}
 
 }
+
+
 
 @media (min-width: 1024px) {
     @include estilo-start;
     @include estilo-texto;
     @include estilo-grid-text;
 
-    /* Mis fondos para PC */
-    .contactos,
-    .envios,
-    .politicas,
-    .productos {
-        background: rgb(255, 213, 231);
-        background: linear-gradient(90deg,
-                rgba(255, 213, 231, 1) 0%,
-                rgba(255, 255, 255, 1) 100%);
-    }
-
     .encabezado {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
 
     }
+
+.button-enviar {  font-size: 2rem;}
+input,
+textarea { font-size: 3rem;}
+
+   /* Flotante para mensajes o promociones */
+
+.sticky-element {
+    top: 25%;
+    img {
+    width: 10rem; 
+}
+
+} 
 
 }
