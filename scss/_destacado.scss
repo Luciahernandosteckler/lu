@@ -6,6 +6,7 @@ $color-principal: #b16310;
   margin-left: 7%;
   margin-right: 7%;
 }
+
 .row {
   .col-12 {
     display: flex;
@@ -14,13 +15,13 @@ $color-principal: #b16310;
   }
 
 
-      img {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
-      .sticky-element{ font: 3rem;}
-    }
-    
-  
+  .sticky-element {
+    font: 3rem;
+  }
+}

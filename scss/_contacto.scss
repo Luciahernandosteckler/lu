@@ -11,7 +11,7 @@ form.cont {
   width: 100%;
   height: auto;
   font-size: 1rem;
-  padding-left: 1rem;
+  padding-left: 2%;
   margin-bottom: 15%;
   color: $color-principal;
 
@@ -40,14 +40,15 @@ form.cont {
     }
   }
 
-  .containertotalcontacto { 
+  .containertotalcontacto {
     img {
-    flex-direction: row;
-    width: 20%;
-    height: 50%;
+      flex-direction: row;
+      width: 20%;
+      height: 50%;
     }
 
   }
+
   .button-enviar {
     margin-top: 10px;
     border-radius: 1rem;

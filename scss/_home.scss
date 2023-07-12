@@ -3,18 +3,16 @@ $color-principal: #b16310;
 .subtitulo {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
-  color:$color-principal;
+  color: $color-principal;
   text-align: center;
   font-weight: 600;
 }
 
 .colores {
-  background: linear-gradient(
-    90deg,
-    rgba(247, 194, 169, 1) 0%,
-    rgba(255, 199, 240, 1) 51%,
-    rgba(255, 227, 170, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(247, 194, 169, 1) 0%,
+      rgba(255, 199, 240, 1) 51%,
+      rgba(255, 227, 170, 1) 100%);
   padding: 1.5%;
 }
 

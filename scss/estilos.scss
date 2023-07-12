@@ -48,8 +48,12 @@ p {
     font-weight: 600;
 
   }
-  .navbar-brand {justify-content: center; text-align: center;
-  max-height: 5%;}
+
+  .navbar-brand {
+    justify-content: center;
+    text-align: center;
+    max-height: 5%;
+  }
 }
 
 .logo-container {
@@ -75,13 +79,12 @@ p {
   text-align: center;
   padding: 0.5%;
   background: rgb(247, 194, 169);
-  background: linear-gradient(
-    90deg,
-    rgba(247, 194, 169, 1) 0%,
-    rgba(255, 199, 240, 1) 51%,
-    rgba(255, 227, 170, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(247, 194, 169, 1) 0%,
+      rgba(255, 199, 240, 1) 51%,
+      rgba(255, 227, 170, 1) 100%);
 }
+
 /*Estilo para flotante de mensajes o promociones*/
 
 .sticky-element {
@@ -91,25 +94,28 @@ p {
   transform: translateY(-50%);
   z-index: 9999;
   opacity: 0.2;
+
   img {
-    display: block; 
+    display: block;
     height: auto;
   }
+
   border-radius: 100%/100%;
   box-shadow: 0 2px 4px rgba(232, 148, 255, 0.8);
+
   &:hover {
     background-color: #FFD700;
-}
+  }
 }
 
-  /* Fondos */
-    .politicas,
-    .envios,
-    .productos,
-    .contactos {
-        background: rgb(255, 213, 231);
-        background: linear-gradient(90deg, rgba(255, 213, 231, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    }
+/* Fondos */
+.politicas,
+.envios,
+.productos,
+.contactos {
+  background: rgb(255, 213, 231);
+  background: linear-gradient(90deg, rgba(255, 213, 231, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
 
 /*pie de pagina general*/
 
@@ -124,7 +130,7 @@ p {
 .footer {
   @extend .estilos-comunes;
   font-size: 1rem;
-  margin-top: auto; 
+  margin-top: auto;
 }
 
 .piedepagina {

@@ -11,9 +11,11 @@ $color-principal: #b16310;
         color: $color-principal;
         font-size: 1.9rem;
         padding: 1%;
-        margin-left: 0.2%;
+       padding-right: 2%;
+       padding-left: 2%;
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         font-weight: 900;
+
     }
 }
 
@@ -27,6 +29,8 @@ $color-principal: #b16310;
         justify-content: center;
         width: 100%;
         color: $color-principal;
+       padding-right: 2%;
+       padding-left: 2%;
     
     }
 }

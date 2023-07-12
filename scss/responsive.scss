@@ -14,17 +14,17 @@ $color-principal: #b16310;
         justify-content: space-evenly;
     }
 
-        .galeria-informacion {
-            padding: 0.1em;
-        }
+    .galeria-informacion {
+        padding: 0.1em;
+    }
 
-        .galeria-item {
-            width: calc(45% - 1rem);
-            margin-bottom: 1rem;
-            margin-top: 1rem;
-            justify-content: space-evenly;
-        }
-    
+    .galeria-item {
+        width: calc(45% - 1rem);
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        justify-content: space-evenly;
+    }
+
 
     /* Pagina home-animacion */
 
@@ -40,11 +40,11 @@ $color-principal: #b16310;
         font-size: 1rem;
     }
 
-    .homeanime{
-    font-size: 1.2rem;
+    .homeanime {
+        font-size: 1.2rem;
     }
 
-    .textobanner{
+    .textobanner {
         font-size: 1.2rem;
     }
 
@@ -56,20 +56,21 @@ $color-principal: #b16310;
     .banner {
         padding-top: 5%;
         margin-bottom: 5%;
-}
+    }
 
 
     /* Flotante para mensajes o promociones */
 
     .sticky-element {
         top: 35%;
+
         img {
-        width: 4rem; 
-    }
+            width: 4rem;
+        }
     }
 
     /* PAGINA DESTACADO */
-    
+
     .containertotal {
         .row {
             .col-12 {
@@ -80,8 +81,9 @@ $color-principal: #b16310;
         }
     }
 
-    .destacados  {
-        padding-bottom: 20%; }
+    .destacados {
+        padding-bottom: 20%;
+    }
 
     /* contacto formulario y lista */
     .formulario {
@@ -93,11 +95,18 @@ $color-principal: #b16310;
         align-items: center;
     }
 
-    .label { font-size: 1rem;}
+    .label {
+        font-size: 1rem;
+    }
 
-    .input, .textarea{ font-size: 1rem;}
+    .input,
+    .textarea {
+        font-size: 1rem;
+    }
 
-    .button-enviar { font-size: 1rem;}
+    .button-enviar {
+        font-size: 1rem;
+    }
 
     /* ESCRITURAS */
 
@@ -112,8 +121,8 @@ $color-principal: #b16310;
         font-size: 0.5rem;
     }
 
-    .social-icons{
-        a{
+    .social-icons {
+        a {
             font-size: 1.5rem;
         }
     }
@@ -132,14 +141,15 @@ $color-principal: #b16310;
     }
 
 
-/* Flotante para mensajes o promociones */
+    /* Flotante para mensajes o promociones */
 
-.sticky-element {
-    top: 20%;
-    img {
-    width: 8rem; 
-}
-}
+    .sticky-element {
+        top: 20%;
+
+        img {
+            width: 8rem;
+        }
+    }
 
     /* Escrituras */
 
@@ -186,11 +196,17 @@ $color-principal: #b16310;
         text-decoration: none;
         color: #f9f4f4d6;
     }
-/*Pagina contacto*/
 
-.button-enviar {  font-size: 2rem;}
-input,
-textarea { font-size: 3rem;}
+    /*Pagina contacto*/
+
+    .button-enviar {
+        font-size: 2rem;
+    }
+
+    input,
+    textarea {
+        font-size: 3rem;
+    }
 
 }
 
@@ -206,18 +222,24 @@ textarea { font-size: 3rem;}
 
     }
 
-.button-enviar {  font-size: 2rem;}
-input,
-textarea { font-size: 3rem;}
+    .button-enviar {
+        font-size: 2rem;
+    }
 
-   /* Flotante para mensajes o promociones */
+    input,
+    textarea {
+        font-size: 3rem;
+    }
 
-.sticky-element {
-    top: 25%;
-    img {
-    width: 10rem; 
-}
+    /* Flotante para mensajes o promociones */
 
-} 
+    .sticky-element {
+        top: 25%;
+
+        img {
+            width: 10rem;
+        }
+
+    }
 
 }

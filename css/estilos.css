@@ -140,7 +140,7 @@ form.cont {
   width: 100%;
   height: auto;
   font-size: 1rem;
-  padding-left: 1rem;
+  padding-left: 2%;
   margin-bottom: 15%;
   color: #b16310;
 }
@@ -184,21 +184,17 @@ form.cont .button-enviar:hover {
   background-color: pink;
 }
 
-.mapaconteiner {
-  position: relative;
-  max-width: 10rem;
-  max-height: 20rem;
+.container {
+  text-align: center;
 }
-.mapaconteiner .mapa {
-  position: absolute;
-  max-width: 10rem;
-  max-height: 20rem;
-  top: 0;
-  left: 0;
+
+.embed-responsive-item iframe {
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-.mapaconteiner .envios-- {
-  margin-left: 5%;
-  margin-right: 5%;
+
+.container a {
+  text-decoration: none;
 }
 
 /* Estilos para dispositivos móviles */
@@ -207,7 +203,8 @@ form.cont .button-enviar:hover {
     color: #b16310;
     font-size: 1.9rem;
     padding: 1%;
-    margin-left: 0.2%;
+    padding-right: 2%;
+    padding-left: 2%;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-weight: 900;
   }
@@ -219,6 +216,8 @@ form.cont .button-enviar:hover {
     justify-content: center;
     width: 100%;
     color: #b16310;
+    padding-right: 2%;
+    padding-left: 2%;
   }
   .grid-text {
     font-size: 2rem;
@@ -319,7 +318,8 @@ form.cont .button-enviar:hover {
     color: #b16310;
     font-size: 1.9rem;
     padding: 1%;
-    margin-left: 0.2%;
+    padding-right: 2%;
+    padding-left: 2%;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-weight: 900;
   }
@@ -331,6 +331,8 @@ form.cont .button-enviar:hover {
     justify-content: center;
     width: 100%;
     color: #b16310;
+    padding-right: 2%;
+    padding-left: 2%;
   }
   .grid-text {
     font-size: 2rem;
@@ -400,7 +402,8 @@ form.cont .button-enviar:hover {
     color: #b16310;
     font-size: 1.9rem;
     padding: 1%;
-    margin-left: 0.2%;
+    padding-right: 2%;
+    padding-left: 2%;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-weight: 900;
   }
@@ -412,6 +415,8 @@ form.cont .button-enviar:hover {
     justify-content: center;
     width: 100%;
     color: #b16310;
+    padding-right: 2%;
+    padding-left: 2%;
   }
   .grid-text {
     font-size: 2rem;
@@ -444,7 +449,8 @@ form.cont .button-enviar:hover {
   color: #b16310;
   font-size: 1.9rem;
   padding: 1%;
-  margin-left: 0.2%;
+  padding-right: 2%;
+  padding-left: 2%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 900;
 }
@@ -457,6 +463,8 @@ form.cont .button-enviar:hover {
   justify-content: center;
   width: 100%;
   color: #b16310;
+  padding-right: 2%;
+  padding-left: 2%;
 }
 
 .grid-text .grid-text {
